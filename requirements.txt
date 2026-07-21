@@ -1,0 +1,11 @@
+tiktoken>=0.13
+transformers>=4.44
+sentencepiece
+protobuf
+sentence-transformers>=3.0
+scikit-learn>=1.4
+scipy>=1.11
+pandas>=2.0
+numpy>=1.26
+matplotlib>=3.8
+tokenizers>=0.19
