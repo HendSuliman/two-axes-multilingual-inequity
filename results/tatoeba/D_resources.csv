@@ -1,0 +1,3 @@
+resource,languages,units_per_language,same_content_in_every_language,non_English_pairs_scorable,English_words_per_unit,domain
+This corpus,40 (+ Arabic source),6236,yes (verse-aligned),1560,24.2,"religious, formal"
+"Tatoeba (LASER test sets), shared languages",27 of ours,307-1000,no (median English-side Jaccard 0.0035),0,6.33,short everyday sentences

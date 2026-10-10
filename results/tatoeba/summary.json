@@ -1,0 +1,241 @@
+{
+ "content": {
+  "n_shared_languages": 27,
+  "n_main": 26,
+  "tatoeba_pairs_min": 307,
+  "tatoeba_pairs_median": 1000.0,
+  "tatoeba_eng_words_median": 6.33,
+  "tatoeba_eng_words_range": [
+   5.05,
+   9.06
+  ],
+  "corpus_eng_words_per_verse": 24.2,
+  "english_overlap_median_jaccard": 0.0035,
+  "english_overlap_max_jaccard": 0.322,
+  "english_sentences_shared_by_all": 0,
+  "distinct_english_sentences": 21520
+ },
+ "protocol_check_max_abs_diff": 0.066,
+ "A_rank_agreement": {
+  "labse": {
+   "n": 26,
+   "rho_eng_paired": 0.339,
+   "p": 0.0902,
+   "rho_size_matched": 0.075,
+   "rho_vs_all_pairs": 0.247
+  },
+  "bgem3": {
+   "n": 26,
+   "rho_eng_paired": 0.471,
+   "p": 0.0151,
+   "rho_size_matched": 0.356,
+   "rho_vs_all_pairs": 0.224
+  },
+  "e5": {
+   "n": 26,
+   "rho_eng_paired": 0.59,
+   "p": 0.0015,
+   "rho_size_matched": 0.53,
+   "rho_vs_all_pairs": -0.092
+  },
+  "mpnet": {
+   "n": 26,
+   "rho_eng_paired": 0.696,
+   "p": 0.0001,
+   "rho_size_matched": 0.685,
+   "rho_vs_all_pairs": 0.685
+  }
+ },
+ "B_spread": [
+  {
+   "encoder": "labse",
+   "benchmark": "corpus",
+   "mean": 0.946,
+   "share_at_ceiling_0.95": 0.462,
+   "sd": 0.019,
+   "iqr": 0.021,
+   "min": 0.874,
+   "max": 0.965
+  },
+  {
+   "encoder": "labse",
+   "benchmark": "corpus_size_matched",
+   "mean": 0.95,
+   "share_at_ceiling_0.95": 0.538,
+   "sd": 0.019,
+   "iqr": 0.018,
+   "min": 0.874,
+   "max": 0.983
+  },
+  {
+   "encoder": "labse",
+   "benchmark": "tatoeba",
+   "mean": 0.957,
+   "share_at_ceiling_0.95": 0.808,
+   "sd": 0.036,
+   "iqr": 0.024,
+   "min": 0.832,
+   "max": 0.994
+  },
+  {
+   "encoder": "bgem3",
+   "benchmark": "corpus",
+   "mean": 0.945,
+   "share_at_ceiling_0.95": 0.615,
+   "sd": 0.025,
+   "iqr": 0.015,
+   "min": 0.877,
+   "max": 0.968
+  },
+  {
+   "encoder": "bgem3",
+   "benchmark": "corpus_size_matched",
+   "mean": 0.949,
+   "share_at_ceiling_0.95": 0.654,
+   "sd": 0.024,
+   "iqr": 0.017,
+   "min": 0.885,
+   "max": 0.983
+  },
+  {
+   "encoder": "bgem3",
+   "benchmark": "tatoeba",
+   "mean": 0.923,
+   "share_at_ceiling_0.95": 0.5,
+   "sd": 0.074,
+   "iqr": 0.042,
+   "min": 0.639,
+   "max": 0.991
+  },
+  {
+   "encoder": "e5",
+   "benchmark": "corpus",
+   "mean": 0.846,
+   "share_at_ceiling_0.95": 0.0,
+   "sd": 0.08,
+   "iqr": 0.078,
+   "min": 0.567,
+   "max": 0.926
+  },
+  {
+   "encoder": "e5",
+   "benchmark": "corpus_size_matched",
+   "mean": 0.856,
+   "share_at_ceiling_0.95": 0.038,
+   "sd": 0.072,
+   "iqr": 0.079,
+   "min": 0.662,
+   "max": 0.959
+  },
+  {
+   "encoder": "e5",
+   "benchmark": "tatoeba",
+   "mean": 0.889,
+   "share_at_ceiling_0.95": 0.154,
+   "sd": 0.091,
+   "iqr": 0.053,
+   "min": 0.638,
+   "max": 0.98
+  },
+  {
+   "encoder": "mpnet",
+   "benchmark": "corpus",
+   "mean": 0.708,
+   "share_at_ceiling_0.95": 0.0,
+   "sd": 0.238,
+   "iqr": 0.223,
+   "min": 0.01,
+   "max": 0.891
+  },
+  {
+   "encoder": "mpnet",
+   "benchmark": "corpus_size_matched",
+   "mean": 0.716,
+   "share_at_ceiling_0.95": 0.0,
+   "sd": 0.238,
+   "iqr": 0.145,
+   "min": 0.013,
+   "max": 0.91
+  },
+  {
+   "encoder": "mpnet",
+   "benchmark": "tatoeba",
+   "mean": 0.872,
+   "share_at_ceiling_0.95": 0.577,
+   "sd": 0.206,
+   "iqr": 0.05,
+   "min": 0.227,
+   "max": 0.991
+  }
+ ],
+ "B_pairs_separated_median": {
+  "corpus": 5.0,
+  "tatoeba": 5.0
+ },
+ "B_languages_corpus_separates_more": 11,
+ "B_languages_tatoeba_separates_more": 8,
+ "C_content_confound": [
+  {
+   "encoder": "labse",
+   "tatoeba_accuracy_vs": "tatoeba_eng_words_per_sentence",
+   "rho": 0.399,
+   "p": 0.0434
+  },
+  {
+   "encoder": "labse",
+   "tatoeba_accuracy_vs": "tatoeba_pairs",
+   "rho": 0.298,
+   "p": 0.1396
+  },
+  {
+   "encoder": "bgem3",
+   "tatoeba_accuracy_vs": "tatoeba_eng_words_per_sentence",
+   "rho": 0.69,
+   "p": 0.0001
+  },
+  {
+   "encoder": "bgem3",
+   "tatoeba_accuracy_vs": "tatoeba_pairs",
+   "rho": 0.312,
+   "p": 0.1213
+  },
+  {
+   "encoder": "e5",
+   "tatoeba_accuracy_vs": "tatoeba_eng_words_per_sentence",
+   "rho": 0.67,
+   "p": 0.0002
+  },
+  {
+   "encoder": "e5",
+   "tatoeba_accuracy_vs": "tatoeba_pairs",
+   "rho": 0.238,
+   "p": 0.2417
+  },
+  {
+   "encoder": "mpnet",
+   "tatoeba_accuracy_vs": "tatoeba_eng_words_per_sentence",
+   "rho": 0.503,
+   "p": 0.0088
+  },
+  {
+   "encoder": "mpnet",
+   "tatoeba_accuracy_vs": "tatoeba_pairs",
+   "rho": 0.436,
+   "p": 0.0261
+  }
+ ],
+ "D_not_in_tatoeba": [
+  "asante",
+  "assamese",
+  "gujarati",
+  "hausa",
+  "kannada",
+  "kyrgyz",
+  "lingala",
+  "moore",
+  "oromo",
+  "pashto",
+  "tajik",
+  "yoruba"
+ ]
+}

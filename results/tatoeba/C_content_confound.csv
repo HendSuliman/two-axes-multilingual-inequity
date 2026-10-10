@@ -1,0 +1,9 @@
+encoder,tatoeba_accuracy_vs,rho,p
+labse,tatoeba_eng_words_per_sentence,0.399,0.0434
+labse,tatoeba_pairs,0.298,0.1396
+bgem3,tatoeba_eng_words_per_sentence,0.69,0.0001
+bgem3,tatoeba_pairs,0.312,0.1213
+e5,tatoeba_eng_words_per_sentence,0.67,0.0002
+e5,tatoeba_pairs,0.238,0.2417
+mpnet,tatoeba_eng_words_per_sentence,0.503,0.0088
+mpnet,tatoeba_pairs,0.436,0.0261

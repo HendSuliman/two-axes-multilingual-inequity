@@ -1,0 +1,28 @@
+language,code,tatoeba_pairs,tatoeba_eng_words_per_sentence,tatoeba_script,corpus_script
+albanian,sqi,1000,6.62,LATIN 100%,LATIN 100%
+azeri,aze,1000,5.24,LATIN 100%,LATIN 100%
+bosnian-rwwad,bos,354,5.05,LATIN 100%,LATIN 100%
+chinese,cmn,1000,6.82,"CJK 98%, LATIN 2%",CJK 100%
+croatian,hrv,1000,6.32,LATIN 100%,LATIN 100%
+dutch,nld,1000,6.7,LATIN 100%,LATIN 100%
+french,fra,1000,6.89,LATIN 100%,LATIN 100%
+german,deu,1000,9.06,LATIN 100%,LATIN 100%
+indonesian,ind,1000,6.71,LATIN 100%,"LATIN 100%, MODIFIER 0%"
+japanese,jpn,1000,7.46,"HIRAGANA 61%, CJK 28%","HIRAGANA 66%, CJK 27%"
+khmer,khm,722,5.34,"KHMER 99%, LATIN 1%",KHMER 100%
+kurdish,kur,410,5.94,"LATIN 96%, ARABIC 4%",ARABIC 100%
+lithuanian,lit,1000,6.16,LATIN 100%,"LATIN 100%, ARABIC 0%"
+macedonian,mkd,1000,5.86,CYRILLIC 100%,"CYRILLIC 100%, LATIN 0%"
+malayalam,mal,687,6.15,MALAYALAM 100%,MALAYALAM 100%
+persian,pes,1000,6.68,ARABIC 100%,ARABIC 100%
+portuguese,por,1000,6.87,LATIN 100%,LATIN 100%
+romanian,ron,1000,6.44,LATIN 100%,"LATIN 100%, MODIFIER 0%"
+serbian,srp,1000,6.33,"LATIN 71%, CYRILLIC 29%","CYRILLIC 100%, LATIN 0%"
+spanish,spa,1000,6.72,LATIN 100%,LATIN 100%
+tagalog,tgl,1000,6.2,LATIN 100%,LATIN 100%
+tamil,tam,307,5.82,"TAMIL 100%, LATIN 0%",TAMIL 100%
+turkish,tur,1000,6.64,LATIN 100%,LATIN 100%
+urdu,urd,1000,6.18,ARABIC 100%,ARABIC 100%
+uyghur,uig,1000,6.26,"ARABIC 100%, CYRILLIC 0%",ARABIC 100%
+uzbek,uzb,428,5.09,"LATIN 64%, CYRILLIC 36%",CYRILLIC 100%
+vietnamese,vie,1000,7.39,LATIN 100%,LATIN 100%
