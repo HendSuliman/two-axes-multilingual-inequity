@@ -1,0 +1,12 @@
+measure,within_max_over_min_median,within_max_over_min_worst,worst_language,between_language_p90_p10,icc_between_language,between_over_within
+bytes_per_verse,1.0664,1.4068,uzbek,3.53,0.9711,38.1
+gpt4o_o200k_tpv,1.068,1.5589,english,2.602,0.9662,23.6
+gpt4_cl100k_tpv,1.056,1.6012,english,5.477,0.9858,79.9
+mbert_tpv,1.0576,1.5421,english,2.366,0.8892,23.7
+xlmr_tpv,1.0645,1.5323,english,1.714,0.7283,11.1
+bloom_tpv,1.0655,1.5457,english,3.292,0.976,35.0
+nllb_tpv,1.0579,1.4964,english,1.742,0.7296,12.8
+mt5_tpv,1.048,1.4729,english,1.433,0.6053,9.0
+byt5_tpv,1.0664,1.4068,uzbek,3.53,0.9711,38.1
+llama3_tpv,1.0551,1.5387,english,6.527,0.9879,100.3
+gemma_tpv,1.0811,1.5592,english,2.394,0.9648,17.2

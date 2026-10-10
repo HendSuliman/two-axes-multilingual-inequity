@@ -1,0 +1,25 @@
+language,script,pair,cos_same_lang_diff_translator,cos_diff_lang,gap
+albanian,Latin,albanian_nahi | albanian_rwwad,0.8666,0.7129,0.1537
+amharic,Ethiopic,amharic_sadiq | amharic_zain,0.7793,0.6616,0.1176
+bosnian,Latin,bosnian_mihanovich | bosnian_rwwad,0.9655,0.706,0.2595
+chinese,CJK,chinese_makin | chinese_suliman,0.9747,0.6367,0.338
+english,Latin,english_hilali_khan | english_rwwad,0.6938,0.675,0.0188
+english,Latin,english_hilali_khan | english_saheeh,0.7114,0.675,0.0364
+english,Latin,english_rwwad | english_saheeh,0.8295,0.7053,0.1242
+french,Latin,french_montada | french_rashid,0.7499,0.72,0.03
+german,Latin,german_bubenheim | german_rwwad,0.9492,0.7146,0.2346
+indonesian,Latin,indonesian_affairs | indonesian_complex,0.9302,0.7316,0.1986
+indonesian,Latin,indonesian_affairs | indonesian_sabiq,0.9213,0.7316,0.1897
+indonesian,Latin,indonesian_complex | indonesian_sabiq,0.8672,0.7237,0.1435
+khmer,Khmer,khmer_cambodia | khmer_rwwad,0.8638,0.6775,0.1863
+spanish,Latin,spanish_garcia | spanish_montada_eu,0.7383,0.6864,0.0518
+spanish,Latin,spanish_garcia | spanish_montada_latin,0.743,0.6864,0.0566
+spanish,Latin,spanish_montada_eu | spanish_montada_latin,0.9897,0.6977,0.2921
+swahili,Latin,swahili_barawani | swahili_rwwad,0.8891,0.6811,0.208
+tamil,Brahmic,tamil_baqavi | tamil_omar,0.7459,0.6799,0.066
+tamil,Brahmic,tamil_baqavi | tamil_omar_brief,0.7499,0.6799,0.07
+tamil,Brahmic,tamil_omar | tamil_omar_brief,0.9325,0.6962,0.2363
+turkish,Latin,turkish_rwwad | turkish_shaban,0.8891,0.7016,0.1875
+turkish,Latin,turkish_rwwad | turkish_shahin,0.8511,0.7016,0.1495
+turkish,Latin,turkish_shaban | turkish_shahin,0.8375,0.6937,0.1437
+uzbek,Latin,uzbek_mansour | uzbek_rwwad,0.7783,0.6505,0.1278

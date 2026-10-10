@@ -1,0 +1,17 @@
+{
+  "n_languages": 14,
+  "n_translations": 33,
+  "scripts": [
+    "Brahmic",
+    "CJK",
+    "Ethiopic",
+    "Khmer",
+    "Latin"
+  ],
+  "icc_min_across_tokenizers": 0.6053,
+  "icc_median": 0.9662,
+  "worst_within_language_fertility_ratio": 1.6012,
+  "median_between_over_within": 23.7,
+  "min_semantic_gap": 0.0188,
+  "max_within_language_retrieval_range": 0.0505
+}
