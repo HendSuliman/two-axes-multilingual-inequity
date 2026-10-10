@@ -1,0 +1,41 @@
+language,status,file,extent,usable_verses,year,copyright,corpus_script,joshi
+albanian,absent,,,,,,Latin,1
+asante,covered,twi-twiasante,full Bible,30962.0,2020.0,"Copyright © 2020 Biblica, Inc.",Latin,1
+assamese,covered,asm-asmfb,full Bible,30947.0,2017.0,"Copyright © 2017, 2018 Bridge Connectivity Solutions",Brahmic,1
+azeri,covered,azb-azb,full Bible,30892.0,2008.0,Copyright © 2008 Müqəddəs Kitab Sirkəti,Latin,1
+bosnian,absent,,,,,,Latin,3
+chinese,covered,cmn-cmnfeb,NT only,7940.0,2022.0,"Copyright © 2022 Free Bible Ministry, Inc.",CJK,5
+croatian,covered,hrv-hrv,full Bible,30996.0,,public domain,Latin,4
+dutch,covered,nld-nld1939,full Bible,30610.0,1939.0,public domain,Latin,4
+english,covered,eng-englsv,full Bible,30968.0,2020.0,Copyright © 2020 Covenant Press,Latin,5
+french,covered,fra-francl,full Bible,31156.0,2022.0,Copyright © 2022 Fraternité de Tibériade,Latin,5
+german,covered,deu-deuelbbk,full Bible,31165.0,2019.0,Copyright © 2019 Verbreitung des christlichen Glaubens e.V.,Latin,5
+gujarati,covered,guj-guj2017,full Bible,30968.0,2017.0,Copyright © 2019 Bridge Connectivity Solutions,Brahmic,1
+hausa,covered,hau-hausa,full Bible,30951.0,2020.0,"Copyright © 2020 Biblica, Inc.",Latin,2
+indonesian,covered,ind-indayt,full Bible,30966.0,2011.0,Copyright © 2011-2024 YLSA-AYT,Latin,3
+japanese,covered,jpn-jpn1965,NT only,7920.0,1965.0,public domain,CJK,5
+kannada,covered,kan-kanokcv,full Bible,30943.0,1999.0,"Copyright © 1999, 2929, 2922 Biblica, Inc.",Brahmic,1
+khmer,absent,,,,,,Khmer,1
+kurdish,covered,ckb-ckb,full Bible,30967.0,2020.0,Copyright © 2020 anonymous,Arabic,0
+kyrgyz,absent,,,,,,Cyrillic,1
+lingala,covered,lin-lin,full Bible,31168.0,2020.0,"Copyright © 2020 Biblica, Inc.",Latin,1
+lithuanian,covered,lit-lit,partial,7099.0,2022.0,"Copyright © 2022-2024 Believers' Bible Society, Inc.",Latin,3
+macedonian,absent,,,,,,Cyrillic,1
+malayalam,covered,mal-mal2015,full Bible,30964.0,2015.0,Copyright © 2015 The Free Bible Foundation,Brahmic,1
+moore,absent,,,,,,Latin,0
+oromo,covered,gaz-gaz,full Bible,30965.0,2022.0,"Copyright © 2022 Biblica, Inc.",Latin,1
+pashto,absent,,,,,,Arabic,1
+persian,covered,pes-pesOPV,full Bible,30950.0,,public domain,Arabic,4
+portuguese,covered,por-porbr2018,full Bible,30966.0,2018.0,"Copyright © 2018 Diego Santos, Mario Sérgio, e Marco Teles",Latin,4
+romanian,covered,ron-ronbtf,full Bible,30966.0,,public domain,Latin,3
+serbian,script mismatch,srp-srp1865 (Latin),,,,,Cyrillic,4
+spanish,covered,spa-spabes,full Bible,30965.0,2018.0,"Copyright © 2018, 2019 AudioBiblia.org /Irma Flores",Latin,5
+tagalog,covered,tgl-tglulb,full Bible,30966.0,2018.0,Copyright © 2018 Door43 World Missions Community,Latin,3
+tajik,covered,tgk-tgk,partial,4288.0,2010.0,"Copyright © 2010, 2014 Фонди «Калом»",Cyrillic,1
+tamil,covered,tam-tam2017,full Bible,30966.0,2017.0,"Copyright © 2017, 2019 Bridge Connectivity Solutions",Brahmic,3
+turkish,covered,tur-turytc,full Bible,28646.0,2023.0,"Copyright © 2023, 2024 İsmail Serinken and eBible.org",Latin,4
+urdu,covered,urd-urdgvu,full Bible,30282.0,2019.0,Copyright © 2019 Urdu Geo Version,Arabic,3
+uyghur,covered,uig-uigara,full Bible,30436.0,2010.0,Copyright © 2010 Mukeddes Kalam - Uyghur Bible Translation Committee,Arabic,1
+uzbek,absent,,,,,,Latin,3
+vietnamese,covered,vie-vie1934,full Bible,30966.0,1934.0,public domain,Latin,4
+yoruba,covered,yor-yor,full Bible,30951.0,2017.0,"Copyright © 2017 Biblica, Inc.",Latin,2

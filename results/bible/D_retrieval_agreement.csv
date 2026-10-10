@@ -1,0 +1,5 @@
+encoder,n,rho,p,corpus_mean,bible_mean,corpus_bottom5,bible_bottom5,bottom5_overlap
+labse,30,0.716,0.0,0.821,0.887,"kurdish, oromo, asante, lingala, yoruba","oromo, kurdish, lingala, asante, assamese",4
+bgem3,30,0.777,0.0,0.868,0.948,"asante, kurdish, yoruba, oromo, lingala","asante, kurdish, yoruba, tajik, oromo",4
+e5,30,0.784,0.0,0.802,0.923,"asante, oromo, lingala, yoruba, hausa","asante, oromo, lingala, kurdish, vietnamese",3
+mpnet,30,0.956,0.0,0.527,0.629,"tajik, hausa, lingala, yoruba, oromo","oromo, lingala, tajik, hausa, asante",4

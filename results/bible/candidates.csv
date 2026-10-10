@@ -1,0 +1,121 @@
+language,file,status,script,corpus_script,script_match,usable_verses,OT,NT,year,copyright,variety
+albanian,als-alsSHQ,"listed, not in public corpus",,,,,,,,,
+asante,twi-aka,"listed, not in public corpus",,,,,,,,,
+asante,twi-twi,available,Latin,Latin,True,30962.0,23007.0,7955.0,2020.0,"Copyright © 2020 Biblica, Inc.",Twi
+asante,twi-twiasante,available,Latin,Latin,True,30962.0,23007.0,7955.0,2020.0,"Copyright © 2020 Biblica, Inc.",Twi
+assamese,asm-asmfb,available,Brahmic,Brahmic,True,30947.0,23000.0,7947.0,2017.0,"Copyright © 2017, 2018 Bridge Connectivity Solutions",Assamese
+azeri,azb-azb,available,Latin,Latin,True,30892.0,23011.0,7881.0,2008.0,Copyright © 2008 Müqəddəs Kitab Sirkəti,"Azerbaijani, South"
+chinese,cmn-cmn-cu89s,"listed, not in public corpus",,,,,,,,,
+chinese,cmn-cmn-cu89t,"listed, not in public corpus",,,,,,,,,
+chinese,cmn-cmnfeb,available,CJK,CJK,True,7940.0,0.0,7940.0,2022.0,"Copyright © 2022 Free Bible Ministry, Inc.",Chinese
+croatian,hrv-hrv,available,Latin,Latin,True,30996.0,23039.0,7957.0,,public domain,Croatian
+dutch,nld-nld,"listed, not in public corpus",,,,,,,,,
+dutch,nld-nld1939,available,Latin,Latin,True,30610.0,22656.0,7954.0,1939.0,public domain,Dutch
+english,eng-engaoi,available,Latin,Latin,True,2842.0,1416.0,1426.0,2021.0,Copyright © 2021 Bible Society Australia,English
+english,eng-eng-asv,"listed, not in public corpus",,,,,,,,,
+english,eng-engasvbt,available,Latin,Latin,True,30959.0,23011.0,7948.0,,public domain,English
+english,eng-engBBE,available,Latin,Latin,True,30966.0,23011.0,7955.0,,public domain,English
+english,eng-eng-Brenton,"listed, not in public corpus",,,,,,,,,
+english,eng-engbsb,available,Latin,Latin,True,30950.0,23011.0,7939.0,,public domain,English
+english,eng-engDBY,available,Latin,Latin,True,30963.0,23011.0,7952.0,,public domain,English
+english,eng-engDRA,available,Latin,Latin,True,30232.0,22283.0,7949.0,,public domain,English
+english,eng-engemtv,available,Latin,Latin,True,7949.0,0.0,7949.0,2014.0,Copyright © 2014 Dr. Paul W. Esposito,English
+english,eng-engf35,available,Latin,Latin,True,7948.0,0.0,7948.0,2016.0,"Copyright © 2016 Wilbur N. Pickering, ThM, PhD",English
+english,eng-engfbv,available,Latin,Latin,True,30951.0,23011.0,7940.0,2018.0,Copyright © 2018 Dr. Jonathan Gallagher,English
+english,eng-eng-glw,"listed, not in public corpus",,,,,,,,,
+english,eng-enggnv,available,Latin,Latin,True,30957.0,23005.0,7952.0,,public domain,English
+english,eng-engjps,available,Latin,Latin,True,23011.0,23011.0,0.0,,public domain,English
+english,eng-eng-kjv,"listed, not in public corpus",,,,,,,,,
+english,eng-eng-kjv2006,"listed, not in public corpus",,,,,,,,,
+english,eng-engkjvcpb,available,Latin,Latin,True,30966.0,23011.0,7955.0,,public domain,English
+english,eng-englee,available,Latin,Latin,True,23009.0,23009.0,0.0,,public domain,English
+english,eng-englsv,available,Latin,Latin,True,30968.0,23011.0,7957.0,2020.0,Copyright © 2020 Covenant Press,English
+english,eng-eng-lxx2012,"listed, not in public corpus",,,,,,,,,
+english,eng-englxxup,available,Latin,Latin,True,20970.0,20970.0,0.0,,public domain,English
+english,eng-engnet,"listed, not in public corpus",,,,,,,,,
+english,eng-engnna,available,Latin,Latin,True,1235.0,682.0,553.0,1980.0,"Copyright © 1980-2010 Wycliffe Bible Translators, Inc.",English
+english,eng-engnoy,available,Latin,Latin,True,18151.0,10215.0,7936.0,,public domain,English
+english,eng-engoebcw,available,Latin,Latin,True,11663.0,3725.0,7938.0,,public domain,English
+english,eng-engoebus,available,Latin,Latin,True,11663.0,3725.0,7938.0,,public domain,English
+english,eng-engoke,available,Latin,Latin,True,5847.0,5847.0,0.0,,public domain,English
+english,eng-engourb,available,Latin,Latin,True,14265.0,10486.0,3779.0,2016.0,Copyright © 2016 Thomas Robinson,English
+english,eng-engPEV,available,Latin,Latin,True,6790.0,2032.0,4758.0,2019.0,Copyright © 2019 The Plain English Project,English
+english,eng-eng-rv,"listed, not in public corpus",,,,,,,,,
+english,eng-eng-t4t,"listed, not in public corpus",,,,,,,,,
+english,eng-engtcent,available,Latin,Latin,True,7948.0,0.0,7948.0,2022.0,Copyright © 2022 Robert Adam Boyd,English
+english,eng-engtnt,available,Latin,Latin,True,7952.0,0.0,7952.0,,public domain,English
+english,eng-eng-uk-lxx2012,"listed, not in public corpus",,,,,,,,,
+english,eng-engULB,available,Latin,Latin,True,30935.0,22994.0,7941.0,2017.0,Copyright © 2017 Door43 World Missions Community,English
+english,eng-eng-web,"listed, not in public corpus",,,,,,,,,
+english,eng-eng-webbe,"listed, not in public corpus",,,,,,,,,
+english,eng-eng-web-c,"listed, not in public corpus",,,,,,,,,
+english,eng-engwebp,available,Latin,Latin,True,30959.0,23011.0,7948.0,,public domain,English
+english,eng-engwebpb,available,Latin,Latin,True,30959.0,23011.0,7948.0,,public domain,English
+english,eng-engwebster,available,Latin,Latin,True,30966.0,23011.0,7955.0,,public domain,English
+english,eng-engwebu,available,Latin,Latin,True,30959.0,23011.0,7948.0,,public domain,English
+english,eng-engwmb,available,Latin,Latin,True,30959.0,23011.0,7948.0,,public domain,English
+english,eng-engwmbb,available,Latin,Latin,True,30959.0,23011.0,7948.0,,public domain,English
+english,eng-engwyc2017,available,Latin,Latin,True,30967.0,23011.0,7956.0,2001.0,"Copyright © 2001,2010,2011,2012,2013,2015 Terry Noble",English
+english,eng-engwyc2018,available,Latin,Latin,True,30967.0,23011.0,7956.0,2001.0,"Copyright © 2001,2010,2011,2012,2013,2015 Terry Noble",English
+english,eng-engWycliffe,available,Latin,Latin,True,9590.0,5811.0,3779.0,,public domain,English
+english,eng-engylt,available,Latin,Latin,True,30966.0,23011.0,7955.0,,public domain,English
+french,fra-fra_fob,available,Latin,Latin,True,30972.0,23015.0,7957.0,,public domain,French
+french,fra-fraLSG,available,Latin,Latin,True,31060.0,23103.0,7957.0,,public domain,French
+french,fra-francl,available,Latin,Latin,True,31156.0,23203.0,7953.0,2022.0,Copyright © 2022 Fraternité de Tibériade,French
+french,fra-frasbl,available,Latin,Latin,True,30959.0,23011.0,7948.0,,public domain,French
+german,deu-deu1912,available,Latin,Latin,True,30966.0,23011.0,7955.0,1912.0,public domain,"German, Standard"
+german,deu-deu1951,available,Latin,Latin,True,30965.0,23011.0,7954.0,1951.0,Copyright © 1951 Genfer Bibelgeschellschaft (Geneva Bible Society),"German, Standard"
+german,deu-deuelbbk,available,Latin,Latin,True,31165.0,23212.0,7953.0,2019.0,Copyright © 2019 Verbreitung des christlichen Glaubens e.V.,German
+german,deu-deuelo,available,Latin,Latin,True,30966.0,23011.0,7955.0,,public domain,"German, Standard"
+german,deu-deutkw,available,Latin,Latin,True,31153.0,23202.0,7951.0,,public domain,"German, Standard"
+gujarati,guj-guj2017,available,Brahmic,Brahmic,True,30968.0,23011.0,7957.0,2017.0,Copyright © 2019 Bridge Connectivity Solutions,Gujarati
+hausa,hau-hausa,available,Latin,Latin,True,30951.0,23011.0,7940.0,2020.0,"Copyright © 2020 Biblica, Inc.",Hausa
+hausa,hau-hauulb,available,Latin,Latin,True,7957.0,0.0,7957.0,2020.0,Copyright © 2020 Door43 World Missions Community,Hausa
+indonesian,ind-ind,available,Latin,Latin,True,15333.0,7858.0,7475.0,2021.0,Copyright © 2021 oleh Yayasan Alkitab BahasaKita (Albata),Indonesian
+indonesian,ind-indags,available,Latin,Latin,True,7940.0,0.0,7940.0,2021.0,Copyright © 2021-2023 Jonathan Gallagher,Indonesian
+indonesian,ind-indayt,available,Latin,Latin,True,30966.0,23011.0,7955.0,2011.0,Copyright © 2011-2024 YLSA-AYT,Indonesian
+japanese,jpn-jpn1965,available,CJK,CJK,True,7920.0,0.0,7920.0,1965.0,public domain,Japanese
+kannada,kan-kan2017,available,Brahmic,Brahmic,True,30824.0,23003.0,7821.0,2017.0,"Copyright © 2017, 2019 Bridge Connectivity Solutions",Kannada
+kannada,kan-kanokcv,available,Brahmic,Brahmic,True,30943.0,22999.0,7944.0,1999.0,"Copyright © 1999, 2929, 2922 Biblica, Inc.",Kannada
+kurdish,ckb-ckb,available,Arabic,Arabic,True,30967.0,23011.0,7956.0,2020.0,Copyright © 2020 anonymous,Central Kurdish
+lingala,lin-lin,available,Latin,Latin,True,31168.0,23211.0,7957.0,2020.0,"Copyright © 2020 Biblica, Inc.",Lingála
+lithuanian,lit-lit,available,Latin,Latin,True,7099.0,2548.0,4551.0,2022.0,"Copyright © 2022-2024 Believers' Bible Society, Inc.",Lithuanian
+malayalam,mal-mal,available,Brahmic,Brahmic,True,30954.0,23005.0,7949.0,2017.0,"Copyright © 2017, 2019 Bridge Communication Systems",Malayalam
+malayalam,mal-mal2015,available,Brahmic,Brahmic,True,30964.0,23011.0,7953.0,2015.0,Copyright © 2015 The Free Bible Foundation,Malayalam
+malayalam,mal-malc,available,Brahmic,Brahmic,True,30650.0,22846.0,7804.0,2021.0,"Copyright © 2021 Biblica, Inc.",മലയാളം
+oromo,gaz-gaz,available,Latin,Latin,True,30965.0,23011.0,7954.0,2022.0,"Copyright © 2022 Biblica, Inc.","Oromo, West Central"
+persian,pes-pesopcb,available,Arabic,Arabic,True,28434.0,20544.0,7890.0,2022.0,"Copyright © 2022 Biblica, Inc.",Iranian Persian
+persian,pes-pesOPV,available,Arabic,Arabic,True,30950.0,23002.0,7948.0,,public domain,Persian
+portuguese,por-porblt,available,Latin,Latin,True,7940.0,0.0,7940.0,2022.0,"Copyright © 2022 Free Bible Ministry, Inc.",Português
+portuguese,por-porbr2018,available,Latin,Latin,True,30966.0,23011.0,7955.0,2018.0,"Copyright © 2018 Diego Santos, Mario Sérgio, e Marco Teles",Portuguese
+portuguese,por-porbrbsl,available,Latin,Latin,True,30959.0,23011.0,7948.0,,public domain,Portuguese
+portuguese,por-portft,available,Latin,Latin,True,7844.0,0.0,7844.0,2018.0,"Copyright © 2018 Ellis W. Deibler, Jr.",Portuguese
+romanian,ron-ron1924,available,Cyrillic,Latin,False,30909.0,23011.0,7898.0,1924.0,public domain,Romanian
+romanian,ron-ronBayash,available,Latin,Latin,True,1149.0,0.0,1149.0,,Copyright ©  ,Romanian
+romanian,ron-ronbtf,available,Latin,Latin,True,30966.0,23011.0,7955.0,,public domain,Romanian
+romanian,ron-ronlsb,available,Latin,Latin,True,7948.0,0.0,7948.0,,public domain,Romanian
+romanian,ron-ronludari,available,Latin,Latin,True,1133.0,0.0,1133.0,2019.0,Copyright © 2019 Pioneer,Romanian
+serbian,srp-srp1865,available,Latin,Cyrillic,False,30973.0,23020.0,7953.0,1865.0,public domain,Serbian
+spanish,spa-spabes,available,Latin,Latin,True,30965.0,23010.0,7955.0,2018.0,"Copyright © 2018, 2019 AudioBiblia.org /Irma Flores",Spanish
+spanish,spa-spablm,available,Latin,Latin,True,30959.0,23011.0,7948.0,,public domain,Spanish
+spanish,spa-spapddpt,available,Latin,Latin,True,30943.0,23011.0,7932.0,2020.0,Copyright © 2020 Asociacion Biblica Latinoamericana,Spanish
+spanish,spa-spaRV1909,available,Latin,Latin,True,30954.0,22999.0,7955.0,1909.0,public domain,Spanish
+spanish,spa-sparvg,"listed, not in public corpus",,,,,,,,,
+spanish,spa-sparvp,"listed, not in public corpus",,,,,,,,,
+spanish,spa-spavbl,available,Latin,Latin,True,30950.0,23011.0,7939.0,2018.0,Copyright © 2018-2020 Jonathan Gallagher y Shelly Barrios de Avila,Spanish
+tagalog,tgl-tglulb,available,Latin,Latin,True,30966.0,23009.0,7957.0,2018.0,Copyright © 2018 Door43 World Missions Community,Tagalog
+tajik,tgk-tgk,available,Cyrillic,Cyrillic,True,4288.0,246.0,4042.0,2010.0,"Copyright © 2010, 2014 Фонди «Калом»",Tajik
+tamil,tam-tam2017,available,Brahmic,Brahmic,True,30966.0,23011.0,7955.0,2017.0,"Copyright © 2017, 2019 Bridge Connectivity Solutions",Tamil
+tamil,tam-tamtcv,available,Brahmic,Brahmic,True,30965.0,23009.0,7956.0,2005.0,"Copyright © 2005, 2020, 2022 Biblica, Inc.",Tamil
+turkish,tur-turytc,available,Latin,Latin,True,28646.0,20820.0,7826.0,2023.0,"Copyright © 2023, 2024 İsmail Serinken and eBible.org",Turkish
+urdu,urd-urd,available,Devanagari,Arabic,False,30967.0,23011.0,7956.0,2019.0,Copyright © 2019 Bridge Connectivity Solutions Pvt. Ltd.,Urdu
+urdu,urd-urdgvh,available,Devanagari,Arabic,False,30282.0,22333.0,7949.0,2019.0,Copyright © 2019 Urdu Geo Version,Urdu
+urdu,urd-urdgvr,available,Latin,Arabic,False,30282.0,22333.0,7949.0,2019.0,Copyright © 2019 Urdu Geo Version,Urdu
+urdu,urd-urdgvu,available,Arabic,Arabic,True,30282.0,22333.0,7949.0,2019.0,Copyright © 2019 Urdu Geo Version,Urdu
+uyghur,uig-uigara,available,Arabic,Arabic,True,30436.0,22721.0,7715.0,2010.0,Copyright © 2010 Mukeddes Kalam - Uyghur Bible Translation Committee,Uyghur
+uyghur,uig-uigcyr,available,Cyrillic,Arabic,False,29616.0,21902.0,7714.0,2010.0,Copyright © 2010 Mukeddes Kalam - Uyghur Bible Translation Committee,Uyghur
+uyghur,uig-uiglat,available,Latin,Arabic,False,30440.0,22724.0,7716.0,2010.0,Copyright © 2010 Mukeddes Kalam - Uyghur Bible Translation Committee,Uyghur
+uyghur,uig-uigpin,available,Latin,Arabic,False,30435.0,22720.0,7715.0,2010.0,Copyright © 2010 Mukeddes Kalam - Uyghur Bible Translation Committee,Uyghur
+vietnamese,vie-vie1934,available,Latin,Latin,True,30966.0,23011.0,7955.0,1934.0,public domain,Vietnamese
+vietnamese,vie-vieovcb,available,Latin,Latin,True,30960.0,23011.0,7949.0,2015.0,"Copyright © 2015 Biblica, Inc.",Tiếng Việt
+yoruba,yor-yor,available,Latin,Latin,True,30951.0,23011.0,7940.0,2017.0,"Copyright © 2017 Biblica, Inc.",Yorùbá

@@ -1,0 +1,629 @@
+{
+ "A_coverage": {
+  "languages_covered": 31,
+  "languages_covered_names": [
+   "asante",
+   "assamese",
+   "azeri",
+   "chinese",
+   "croatian",
+   "dutch",
+   "english",
+   "french",
+   "german",
+   "gujarati",
+   "hausa",
+   "indonesian",
+   "japanese",
+   "kannada",
+   "kurdish",
+   "lingala",
+   "lithuanian",
+   "malayalam",
+   "oromo",
+   "persian",
+   "portuguese",
+   "romanian",
+   "spanish",
+   "tagalog",
+   "tajik",
+   "tamil",
+   "turkish",
+   "urdu",
+   "uyghur",
+   "vietnamese",
+   "yoruba"
+  ],
+  "script_mismatch": [
+   "serbian"
+  ],
+  "absent": [
+   "albanian",
+   "bosnian",
+   "khmer",
+   "kyrgyz",
+   "macedonian",
+   "moore",
+   "pashto",
+   "uzbek"
+  ],
+  "extent": {
+   "full Bible": 27,
+   "NT only": 2,
+   "partial": 2
+  },
+  "shared_verses_all_covered": 2194,
+  "shared_verses_books": {
+   "JHN": 849,
+   "LUK": 382,
+   "MAT": 377,
+   "MRK": 247,
+   "1JN": 100,
+   "JAS": 95,
+   "1TH": 81,
+   "JUD": 21,
+   "PHM": 17,
+   "3JN": 14,
+   "2JN": 11
+  },
+  "shared_verses_vs_languages": [
+   {
+    "dropped": "-",
+    "languages": 31,
+    "shared_verses": 2194
+   },
+   {
+    "dropped": "tajik",
+    "languages": 30,
+    "shared_verses": 4253
+   },
+   {
+    "dropped": "tajik, lithuanian",
+    "languages": 29,
+    "shared_verses": 7561
+   },
+   {
+    "dropped": "tajik, lithuanian, japanese",
+    "languages": 28,
+    "shared_verses": 7574
+   },
+   {
+    "dropped": "tajik, lithuanian, japanese, chinese",
+    "languages": 27,
+    "shared_verses": 26996
+   }
+  ],
+  "distinct_copyright_holders": 18,
+  "public_domain": 6,
+  "year_range": [
+   1934,
+   2023
+  ],
+  "absent_joshi_0_1": [
+   "albanian",
+   "khmer",
+   "kyrgyz",
+   "macedonian",
+   "moore",
+   "pashto"
+  ],
+  "corpus": {
+   "languages": 40,
+   "shared_verses": 6236,
+   "missing_cells": 0,
+   "publishing_projects": 1
+  }
+ },
+ "B_tokenizers": {
+  "set": "all covered languages",
+  "n_languages": 31,
+  "shared_verses": 2194,
+  "brahmic": [
+   "assamese",
+   "gujarati",
+   "kannada",
+   "malayalam",
+   "tamil"
+  ],
+  "n_latin": 19,
+  "rho_language_fertility_median": 0.874,
+  "rho_language_fertility_range": [
+   0.486,
+   0.967
+  ],
+  "tokenizers_rho_ge_0.7": 9,
+  "p90p10_rank_agreement_rho": 0.976,
+  "p90p10_rank_agreement_p": 1.4675461874042197e-06,
+  "brahmic_cheaper_corpus": 7,
+  "brahmic_cheaper_bible": 7,
+  "direction_agrees": 9,
+  "n_learned": 9,
+  "sentencepiece_vs_hf": [
+   {
+    "tokenizer": "mt5",
+    "verses": 6200,
+    "differ": 1
+   },
+   {
+    "tokenizer": "xlmr",
+    "verses": 6200,
+    "differ": 0
+   }
+  ],
+  "sensitivity": {
+   "set": "without lithuanian, tajik",
+   "n_languages": 29,
+   "shared_verses": 7561,
+   "brahmic": [
+    "assamese",
+    "gujarati",
+    "kannada",
+    "malayalam",
+    "tamil"
+   ],
+   "n_latin": 18,
+   "rho_language_fertility_median": 0.865,
+   "rho_language_fertility_range": [
+    0.434,
+    0.959
+   ],
+   "tokenizers_rho_ge_0.7": 9,
+   "p90p10_rank_agreement_rho": 0.891,
+   "p90p10_rank_agreement_p": 0.0005421442248338665,
+   "brahmic_cheaper_corpus": 7,
+   "brahmic_cheaper_bible": 7,
+   "direction_agrees": 9,
+   "n_learned": 9
+  }
+ },
+ "B_table": [
+  {
+   "set": "all covered languages",
+   "tokenizer": "gpt4o_o200k",
+   "n": 31,
+   "rho_language_fertility": 0.87,
+   "p": "2.1e-10",
+   "rho_tokens_per_byte": 0.964,
+   "corpus_p90p10": 1.87,
+   "bible_p90p10": 1.65,
+   "bible_p90p10_lo": 1.45,
+   "bible_p90p10_hi": 1.95,
+   "corpus_brahmic_latin_tpb": 0.48,
+   "bible_brahmic_latin_tpb": 0.52,
+   "bible_brahmic_latin_p": 5e-05,
+   "same_direction": true
+  },
+  {
+   "set": "all covered languages",
+   "tokenizer": "gpt4_cl100k",
+   "n": 31,
+   "rho_language_fertility": 0.967,
+   "p": "9.4e-19",
+   "rho_tokens_per_byte": 0.983,
+   "corpus_p90p10": 4.85,
+   "bible_p90p10": 4.87,
+   "bible_p90p10_lo": 2.49,
+   "bible_p90p10_hi": 5.49,
+   "corpus_brahmic_latin_tpb": 1.59,
+   "bible_brahmic_latin_tpb": 1.59,
+   "bible_brahmic_latin_p": 0.00019,
+   "same_direction": true
+  },
+  {
+   "set": "all covered languages",
+   "tokenizer": "mbert",
+   "n": 31,
+   "rho_language_fertility": 0.875,
+   "p": "1.2e-10",
+   "rho_tokens_per_byte": 0.981,
+   "corpus_p90p10": 1.95,
+   "bible_p90p10": 1.82,
+   "bible_p90p10_lo": 1.59,
+   "bible_p90p10_hi": 2.2,
+   "corpus_brahmic_latin_tpb": 0.57,
+   "bible_brahmic_latin_tpb": 0.59,
+   "bible_brahmic_latin_p": 5e-05,
+   "same_direction": true
+  },
+  {
+   "set": "all covered languages",
+   "tokenizer": "xlmr",
+   "n": 31,
+   "rho_language_fertility": 0.794,
+   "p": "9.8e-08",
+   "rho_tokens_per_byte": 0.965,
+   "corpus_p90p10": 1.91,
+   "bible_p90p10": 1.83,
+   "bible_p90p10_lo": 1.41,
+   "bible_p90p10_hi": 2.16,
+   "corpus_brahmic_latin_tpb": 0.41,
+   "bible_brahmic_latin_tpb": 0.43,
+   "bible_brahmic_latin_p": 5e-05,
+   "same_direction": true
+  },
+  {
+   "set": "all covered languages",
+   "tokenizer": "bloom",
+   "n": 31,
+   "rho_language_fertility": 0.873,
+   "p": "1.5e-10",
+   "rho_tokens_per_byte": 0.965,
+   "corpus_p90p10": 2.3,
+   "bible_p90p10": 1.88,
+   "bible_p90p10_lo": 1.58,
+   "bible_p90p10_hi": 2.76,
+   "corpus_brahmic_latin_tpb": 0.28,
+   "bible_brahmic_latin_tpb": 0.29,
+   "bible_brahmic_latin_p": 5e-05,
+   "same_direction": true
+  },
+  {
+   "set": "all covered languages",
+   "tokenizer": "nllb",
+   "n": 31,
+   "rho_language_fertility": 0.486,
+   "p": "5.6e-03",
+   "rho_tokens_per_byte": 0.933,
+   "corpus_p90p10": 1.54,
+   "bible_p90p10": 1.28,
+   "bible_p90p10_lo": 1.18,
+   "bible_p90p10_hi": 1.33,
+   "corpus_brahmic_latin_tpb": 0.42,
+   "bible_brahmic_latin_tpb": 0.42,
+   "bible_brahmic_latin_p": 5e-05,
+   "same_direction": true
+  },
+  {
+   "set": "all covered languages",
+   "tokenizer": "mt5",
+   "n": 31,
+   "rho_language_fertility": 0.75,
+   "p": "1.2e-06",
+   "rho_tokens_per_byte": 0.976,
+   "corpus_p90p10": 1.74,
+   "bible_p90p10": 1.67,
+   "bible_p90p10_lo": 1.38,
+   "bible_p90p10_hi": 2.24,
+   "corpus_brahmic_latin_tpb": 0.38,
+   "bible_brahmic_latin_tpb": 0.4,
+   "bible_brahmic_latin_p": 5e-05,
+   "same_direction": true
+  },
+  {
+   "set": "all covered languages",
+   "tokenizer": "llama3",
+   "n": 31,
+   "rho_language_fertility": 0.935,
+   "p": "1.4e-14",
+   "rho_tokens_per_byte": 0.987,
+   "corpus_p90p10": 5.33,
+   "bible_p90p10": 5.05,
+   "bible_p90p10_lo": 2.36,
+   "bible_p90p10_hi": 6.39,
+   "corpus_brahmic_latin_tpb": 1.62,
+   "bible_brahmic_latin_tpb": 1.72,
+   "bible_brahmic_latin_p": 0.00019,
+   "same_direction": true
+  },
+  {
+   "set": "all covered languages",
+   "tokenizer": "gemma",
+   "n": 31,
+   "rho_language_fertility": 0.904,
+   "p": "3.4e-12",
+   "rho_tokens_per_byte": 0.961,
+   "corpus_p90p10": 2.64,
+   "bible_p90p10": 2.29,
+   "bible_p90p10_lo": 1.92,
+   "bible_p90p10_hi": 2.82,
+   "corpus_brahmic_latin_tpb": 0.77,
+   "bible_brahmic_latin_tpb": 0.82,
+   "bible_brahmic_latin_p": 0.01195,
+   "same_direction": true
+  },
+  {
+   "set": "all covered languages",
+   "tokenizer": "byt5",
+   "n": 31,
+   "rho_language_fertility": 0.896,
+   "p": "1.0e-11",
+   "rho_tokens_per_byte": NaN,
+   "corpus_p90p10": 2.93,
+   "bible_p90p10": 2.66,
+   "bible_p90p10_lo": 1.67,
+   "bible_p90p10_hi": 3.22,
+   "corpus_brahmic_latin_tpb": 1.0,
+   "bible_brahmic_latin_tpb": 1.0,
+   "bible_brahmic_latin_p": NaN,
+   "same_direction": null
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "gpt4o_o200k",
+   "n": 29,
+   "rho_language_fertility": 0.866,
+   "p": "1.4e-09",
+   "rho_tokens_per_byte": 0.964,
+   "corpus_p90p10": 1.94,
+   "bible_p90p10": 1.69,
+   "bible_p90p10_lo": 1.48,
+   "bible_p90p10_hi": 2.01,
+   "corpus_brahmic_latin_tpb": 0.49,
+   "bible_brahmic_latin_tpb": 0.52,
+   "bible_brahmic_latin_p": 6e-05,
+   "same_direction": true
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "gpt4_cl100k",
+   "n": 29,
+   "rho_language_fertility": 0.959,
+   "p": "2.5e-16",
+   "rho_tokens_per_byte": 0.984,
+   "corpus_p90p10": 5.01,
+   "bible_p90p10": 4.98,
+   "bible_p90p10_lo": 2.83,
+   "bible_p90p10_hi": 5.6,
+   "corpus_brahmic_latin_tpb": 1.59,
+   "bible_brahmic_latin_tpb": 1.62,
+   "bible_brahmic_latin_p": 0.00024,
+   "same_direction": true
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "mbert",
+   "n": 29,
+   "rho_language_fertility": 0.855,
+   "p": "3.6e-09",
+   "rho_tokens_per_byte": 0.982,
+   "corpus_p90p10": 2.01,
+   "bible_p90p10": 1.82,
+   "bible_p90p10_lo": 1.59,
+   "bible_p90p10_hi": 2.26,
+   "corpus_brahmic_latin_tpb": 0.58,
+   "bible_brahmic_latin_tpb": 0.6,
+   "bible_brahmic_latin_p": 6e-05,
+   "same_direction": true
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "xlmr",
+   "n": 29,
+   "rho_language_fertility": 0.791,
+   "p": "3.2e-07",
+   "rho_tokens_per_byte": 0.96,
+   "corpus_p90p10": 1.91,
+   "bible_p90p10": 1.85,
+   "bible_p90p10_lo": 1.38,
+   "bible_p90p10_hi": 2.09,
+   "corpus_brahmic_latin_tpb": 0.41,
+   "bible_brahmic_latin_tpb": 0.44,
+   "bible_brahmic_latin_p": 6e-05,
+   "same_direction": true
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "bloom",
+   "n": 29,
+   "rho_language_fertility": 0.864,
+   "p": "1.6e-09",
+   "rho_tokens_per_byte": 0.966,
+   "corpus_p90p10": 2.2,
+   "bible_p90p10": 1.77,
+   "bible_p90p10_lo": 1.58,
+   "bible_p90p10_hi": 2.67,
+   "corpus_brahmic_latin_tpb": 0.28,
+   "bible_brahmic_latin_tpb": 0.3,
+   "bible_brahmic_latin_p": 6e-05,
+   "same_direction": true
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "nllb",
+   "n": 29,
+   "rho_language_fertility": 0.434,
+   "p": "1.9e-02",
+   "rho_tokens_per_byte": 0.924,
+   "corpus_p90p10": 1.47,
+   "bible_p90p10": 1.3,
+   "bible_p90p10_lo": 1.2,
+   "bible_p90p10_hi": 1.36,
+   "corpus_brahmic_latin_tpb": 0.42,
+   "bible_brahmic_latin_tpb": 0.43,
+   "bible_brahmic_latin_p": 6e-05,
+   "same_direction": true
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "mt5",
+   "n": 29,
+   "rho_language_fertility": 0.725,
+   "p": "8.8e-06",
+   "rho_tokens_per_byte": 0.971,
+   "corpus_p90p10": 1.83,
+   "bible_p90p10": 1.73,
+   "bible_p90p10_lo": 1.43,
+   "bible_p90p10_hi": 2.28,
+   "corpus_brahmic_latin_tpb": 0.39,
+   "bible_brahmic_latin_tpb": 0.39,
+   "bible_brahmic_latin_p": 6e-05,
+   "same_direction": true
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "llama3",
+   "n": 29,
+   "rho_language_fertility": 0.92,
+   "p": "1.7e-12",
+   "rho_tokens_per_byte": 0.987,
+   "corpus_p90p10": 5.5,
+   "bible_p90p10": 5.26,
+   "bible_p90p10_lo": 2.4,
+   "bible_p90p10_hi": 6.38,
+   "corpus_brahmic_latin_tpb": 1.7,
+   "bible_brahmic_latin_tpb": 1.79,
+   "bible_brahmic_latin_p": 0.00024,
+   "same_direction": true
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "gemma",
+   "n": 29,
+   "rho_language_fertility": 0.89,
+   "p": "1.1e-10",
+   "rho_tokens_per_byte": 0.964,
+   "corpus_p90p10": 2.67,
+   "bible_p90p10": 2.36,
+   "bible_p90p10_lo": 1.97,
+   "bible_p90p10_hi": 2.85,
+   "corpus_brahmic_latin_tpb": 0.79,
+   "bible_brahmic_latin_tpb": 0.84,
+   "bible_brahmic_latin_p": 0.01926,
+   "same_direction": true
+  },
+  {
+   "set": "without lithuanian, tajik",
+   "tokenizer": "byt5",
+   "n": 29,
+   "rho_language_fertility": 0.921,
+   "p": "1.4e-12",
+   "rho_tokens_per_byte": NaN,
+   "corpus_p90p10": 2.96,
+   "bible_p90p10": 2.65,
+   "bible_p90p10_lo": 1.63,
+   "bible_p90p10_hi": 3.17,
+   "corpus_brahmic_latin_tpb": 1.0,
+   "bible_brahmic_latin_tpb": 1.0,
+   "bible_brahmic_latin_p": NaN,
+   "same_direction": null
+  }
+ ],
+ "C_translator_variance": {
+  "summary": [
+   {
+    "source": "bible",
+    "measure": "bytes_per_verse",
+    "languages": 14,
+    "translations": 66,
+    "median_max_over_min": 1.065,
+    "median_pair_ratio": 1.053,
+    "worst": 1.879
+   },
+   {
+    "source": "bible",
+    "measure": "gpt4o_o200k_tpv",
+    "languages": 14,
+    "translations": 66,
+    "median_max_over_min": 1.067,
+    "median_pair_ratio": 1.067,
+    "worst": 1.747
+   },
+   {
+    "source": "corpus study",
+    "measure": "bytes_per_verse",
+    "languages": 14,
+    "translations": 33,
+    "median_max_over_min": 1.066,
+    "median_pair_ratio": 1.06,
+    "worst": 1.407
+   },
+   {
+    "source": "corpus study",
+    "measure": "gpt4o_o200k_tpv",
+    "languages": 14,
+    "translations": 33,
+    "median_max_over_min": 1.068,
+    "median_pair_ratio": 1.06,
+    "worst": 1.559
+   }
+  ],
+  "languages_in_both": [
+   "english",
+   "french",
+   "german",
+   "indonesian",
+   "spanish",
+   "tamil"
+  ],
+  "near_copies_dropped": {
+   "english": [
+    "eng-engoebus",
+    "eng-engwebp",
+    "eng-engwebpb",
+    "eng-engwebu",
+    "eng-engwmb"
+   ]
+  }
+ },
+ "D_retrieval": {
+  "agreement": [
+   {
+    "encoder": "labse",
+    "n": 30,
+    "rho": 0.716,
+    "p": 0.0,
+    "corpus_mean": 0.821,
+    "bible_mean": 0.887,
+    "corpus_bottom5": "kurdish, oromo, asante, lingala, yoruba",
+    "bible_bottom5": "oromo, kurdish, lingala, asante, assamese",
+    "bottom5_overlap": 4
+   },
+   {
+    "encoder": "bgem3",
+    "n": 30,
+    "rho": 0.777,
+    "p": 0.0,
+    "corpus_mean": 0.868,
+    "bible_mean": 0.948,
+    "corpus_bottom5": "asante, kurdish, yoruba, oromo, lingala",
+    "bible_bottom5": "asante, kurdish, yoruba, tajik, oromo",
+    "bottom5_overlap": 4
+   },
+   {
+    "encoder": "e5",
+    "n": 30,
+    "rho": 0.784,
+    "p": 0.0,
+    "corpus_mean": 0.802,
+    "bible_mean": 0.923,
+    "corpus_bottom5": "asante, oromo, lingala, yoruba, hausa",
+    "bible_bottom5": "asante, oromo, lingala, kurdish, vietnamese",
+    "bottom5_overlap": 3
+   },
+   {
+    "encoder": "mpnet",
+    "n": 30,
+    "rho": 0.956,
+    "p": 0.0,
+    "corpus_mean": 0.527,
+    "bible_mean": 0.629,
+    "corpus_bottom5": "tajik, hausa, lingala, yoruba, oromo",
+    "bible_bottom5": "oromo, lingala, tajik, hausa, asante",
+    "bottom5_overlap": 4
+   }
+  ],
+  "floor_gain": [
+   {
+    "encoder": "bgem3",
+    "false": 0.031,
+    "true": 0.253
+   },
+   {
+    "encoder": "e5",
+    "false": 0.074,
+    "true": 0.263
+   },
+   {
+    "encoder": "labse",
+    "false": 0.035,
+    "true": 0.14
+   },
+   {
+    "encoder": "mpnet",
+    "false": 0.109,
+    "true": 0.012
+   }
+  ],
+  "sample": 1000
+ }
+}
