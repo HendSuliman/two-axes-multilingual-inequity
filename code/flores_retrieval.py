@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """Retrieval-floor replication on FLORES-200 devtest: same four encoders,
 English-paired retrieval for the corpus's floor languages plus references."""
+import sys
 import numpy as np, pandas as pd
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import flores_dir, outputs
 
 LANGS = {  # corpus name -> flores code
     "moore":"mos_Latn","oromo":"gaz_Latn","asante":"twi_Latn","lingala":"lin_Latn",
@@ -13,11 +17,11 @@ ENC = {"labse":"sentence-transformers/LaBSE",
        "mpnet":"sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
        "e5":"intfloat/multilingual-e5-base",
        "bgem3":"BAAI/bge-m3"}
-FL = Path("flores200_dataset/devtest")
 RNG = np.random.default_rng(42)
 
 def main():
     from sentence_transformers import SentenceTransformer
+    FL = flores_dir()
     sents = {c: (FL/f"{c}.devtest").read_text(encoding="utf-8").rstrip("\n").split("\n")
              for c in list(LANGS.values())+["eng_Latn"]}
     rows=[]
@@ -40,7 +44,7 @@ def main():
                          "ci_lo":float(np.percentile(boots,2.5)),"ci_hi":float(np.percentile(boots,97.5))})
             print(rows[-1], flush=True)
         del model, emb
-    pd.DataFrame(rows).to_csv("flores_retrieval_floor.csv", index=False)
+    pd.DataFrame(rows).to_csv(outputs() / "flores_retrieval_floor.csv", index=False)
     print("DONE")
 
 if __name__ == "__main__":

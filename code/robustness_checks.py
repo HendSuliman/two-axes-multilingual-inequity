@@ -9,12 +9,18 @@
 4. Length-only probe baseline for the Meccan/Medinan task.
 5. Tokenizer-mirror verification: unsloth mirrors vs independent mirrors.
 
-Expects the unzipped corpus in ./corpus and metadata CSVs alongside.
-Run: python robustness_checks.py
+Run from anywhere:  python code/robustness_checks.py [check ...]
+Checks: duplicates truncation bosnian length_probe mirrors (default: all). The corpus is
+unzipped from data/translations.zip on first use; outputs go to outputs/.
+Only `duplicates` and `length_probe` run offline; the others download tokenizers.
 """
-import io, re, itertools
+import io, re, itertools, sys
 import numpy as np, pandas as pd
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import corpus_dir, outputs
+CORPUS = corpus_dir()
 
 SEED = 42
 MEDINAN = {2,3,4,5,8,9,13,22,24,33,47,48,49,55,57,58,59,60,61,62,63,64,65,66,76,98,99,110}
@@ -46,7 +52,7 @@ def jaccard_near_dup_pairs(texts, mode="word", thresh=0.8):
     return pairs
 
 def duplicates():
-    en = read_corpus_csv(next(Path("corpus").glob("english_*.csv")))
+    en = read_corpus_csv(next(CORPUS.glob("english_*.csv")))
     pairs = jaccard_near_dup_pairs(en.translation.tolist(), "word")
     near = set(i for p in pairs for i in p)
     print(f"EN: {len(near)}/{len(en)} verses with a near-duplicate ({len(near)/len(en):.1%}), {len(pairs)} pairs")
@@ -58,8 +64,8 @@ def duplicates():
     print(f"in-sample rate for a 1000-verse sample: mean={np.mean(rates):.2%}, p95={np.percentile(rates,95):.2%}")
     for pat, mode in [("khmer_*", "char4"), ("japanese_*", "char4"),
                       ("yoruba_*", "word"), ("malayalam_*", "word")]:
-        f = next(Path("corpus").glob(pat + ".csv"), None) or next(Path("corpus").glob(pat), None)
-        f = f or sorted(Path("corpus").glob(pat.split("_")[0] + "*"))[0]
+        f = next(CORPUS.glob(pat + ".csv"), None) or next(CORPUS.glob(pat), None)
+        f = f or sorted(CORPUS.glob(pat.split("_")[0] + "*"))[0]
         texts = read_corpus_csv(f).translation.tolist()
         p = jaccard_near_dup_pairs(texts, mode)
         near = set(i for q in p for i in q)
@@ -73,18 +79,18 @@ def truncation():
            "bgem3": ("BAAI/bge-m3", 8192)}
     toks = {k: AutoTokenizer.from_pretrained(name) for k, (name, cap) in ENC.items()}
     rows = []
-    for f in sorted(Path("corpus").glob("*.csv")):
+    for f in sorted(CORPUS.glob("*.csv")):
         texts = read_corpus_csv(f).translation.astype(str).tolist()
         for k, (name, cap) in ENC.items():
             lens = np.array([len(x) for x in toks[k](texts, add_special_tokens=True, truncation=False)["input_ids"]])
             rows.append({"file": f.name, "encoder": k, "pct_over_cap": float((lens > cap).mean()*100)})
-    df = pd.DataFrame(rows); df.to_csv("truncation_rates.csv", index=False)
+    df = pd.DataFrame(rows); df.to_csv(outputs() / "truncation_rates.csv", index=False)
     print(df.groupby("encoder").pct_over_cap.agg(["mean", "max"]).round(3))
 
 def bosnian_verbosity():
     import tiktoken
     o200k = tiktoken.get_encoding("o200k_base")
-    files = sorted(Path("corpus").glob("bosnian_*.csv"))
+    files = sorted(CORPUS.glob("bosnian_*.csv"))
     stats = {}
     for f in files:
         df = read_corpus_csv(f)
@@ -99,7 +105,7 @@ def length_probe():
     from sklearn.linear_model import LogisticRegression
     from sklearn.metrics import f1_score
     rng = np.random.default_rng(SEED)
-    en = read_corpus_csv(next(Path("corpus").glob("english_*.csv")))
+    en = read_corpus_csv(next(CORPUS.glob("english_*.csv")))
     keys = list(en[["sura","aya"]].itertuples(index=False, name=None))
     idx = rng.permutation(len(keys))
     eval_keys = [keys[i] for i in sorted(idx[:1000])]
@@ -113,11 +119,11 @@ def length_probe():
     Xtr = feats(en, train_keys); mu, sd = Xtr.mean(0), Xtr.std(0)
     clf = LogisticRegression(max_iter=2000).fit((Xtr-mu)/sd, lab(train_keys))
     rows = []
-    for f in sorted(Path("corpus").glob("*.csv")):
+    for f in sorted(CORPUS.glob("*.csv")):
         X = feats(read_corpus_csv(f), eval_keys)
         rows.append({"file": f.name,
                      "macro_f1": f1_score(lab(eval_keys), clf.predict((X-X.mean(0))/X.std(0)), average="macro")})
-    df = pd.DataFrame(rows); df.to_csv("length_probe.csv", index=False)
+    df = pd.DataFrame(rows); df.to_csv(outputs() / "length_probe.csv", index=False)
     print(f"length-only probe: mean={df.macro_f1.mean():.3f}, sd={df.macro_f1.std():.3f}")
 
 def tokenizer_mirrors():
@@ -125,7 +131,7 @@ def tokenizer_mirrors():
     sample_files = ["english", "khmer", "malayalam", "yoruba", "japanese"]
     samples = []
     for s in sample_files:
-        samples += read_corpus_csv(sorted(Path("corpus").glob(s + "*"))[0]).translation.astype(str).head(50).tolist()
+        samples += read_corpus_csv(sorted(CORPUS.glob(s + "*"))[0]).translation.astype(str).head(50).tolist()
     for family, mirrors in [("llama3", ["unsloth/llama-3-8b", "Xenova/llama-3-tokenizer", "NousResearch/Meta-Llama-3-8B"]),
                             ("gemma2", ["unsloth/gemma-2-2b", "Xenova/gemma-2-tokenizer", "unsloth/gemma-2-9b"])]:
         counts = {}
@@ -136,5 +142,9 @@ def tokenizer_mirrors():
             same = sum(x == y for x, y in zip(counts[a], counts[b]))
             print(f"{family}: {a} vs {b}: {same}/{len(samples)} identical")
 
+CHECKS = {"duplicates": duplicates, "truncation": truncation, "bosnian": bosnian_verbosity,
+          "length_probe": length_probe, "mirrors": tokenizer_mirrors}
+
 if __name__ == "__main__":
-    duplicates(); truncation(); bosnian_verbosity(); length_probe(); tokenizer_mirrors()
+    for name in (sys.argv[1:] or list(CHECKS)):
+        print(f"\n=== {name}"); CHECKS[name]()

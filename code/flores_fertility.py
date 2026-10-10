@@ -5,11 +5,17 @@ For each corpus language mapped to a FLORES-200 code, compute mean tokens per
 sentence on the 1,012 devtest sentences under the same production tokenizers,
 then compare per-tokenizer inequality (p90/p10, max/min) and per-language
 fertility (Spearman) against the corpus numbers.
+
+    python code/flores_fertility.py                  # tokenize FLORES (downloads it on first run)
+    python code/flores_fertility.py --summary-only   # recompute the comparison from the shipped
+                                                     # results/flores_fertility_by_language.csv
 """
-import json, numpy as np, pandas as pd
+import json, sys, numpy as np, pandas as pd
 from pathlib import Path
 
-FLORES_DIR = Path("flores200_dataset/devtest")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _paths import RESULTS, FERTILITY, flores_dir, outputs
+
 RNG = np.random.default_rng(42)
 
 # corpus-language -> FLORES-200 code (Kurdish translation is Sorani, Arabic script)
@@ -30,7 +36,7 @@ LANG2FLORES = {
     "vietnamese": "vie_Latn", "yoruba": "yor_Latn", "arabic_source": "arb_Arab",
 }
 
-CORPUS_COL = {  # tokenizer key -> column in fertility_production_v2_all11.csv
+CORPUS_COL = {  # tokenizer key -> column in the corpus fertility file
     "gpt4o_o200k": "gpt4o_o200k_tok_per_verse", "gpt4_cl100k": "gpt4_cl100k_tok_per_verse",
     "llama3": "llama3_tok_per_verse", "gemma2": "gemma_tok_per_verse",
     "mbert": "mbert_tok_per_verse", "xlmr": "xlmr_tok_per_verse",
@@ -77,27 +83,32 @@ def boot_p90p10(v, n=10000):
         out.append(np.percentile(b, 90) / np.percentile(b, 10))
     return np.percentile(out, [2.5, 97.5])
 
-def main():
-    from scipy.stats import spearmanr
+def tokenize_flores():
     toks = get_tokenizers()
     print("tokenizers ready:", sorted(toks))
-    # load FLORES sentences for the unique codes we need
+    fdir = flores_dir()
     codes = sorted(set(LANG2FLORES.values()))
-    sents = {c: (FLORES_DIR / f"{c}.devtest").read_text(encoding="utf-8").rstrip("\n").split("\n") for c in codes}
+    sents = {c: (fdir / f"{c}.devtest").read_text(encoding="utf-8").rstrip("\n").split("\n") for c in codes}
     for c in codes:
         assert len(sents[c]) == 1012, (c, len(sents[c]))
-    # mean tokens/sentence per (tokenizer, code)
     rows = []
     for tk, fn in toks.items():
         for c in codes:
-            counts = [fn(s) for s in sents[c]]
             rows.append({"tokenizer": tk, "flores_code": c,
-                         "mean_tok_per_sent": float(np.mean(counts))})
+                         "mean_tok_per_sent": float(np.mean([fn(s) for s in sents[c]]))})
         print("done", tk)
     fl = pd.DataFrame(rows)
-    fl.to_csv("flores_fertility_by_language.csv", index=False)
+    fl.to_csv(outputs() / "flores_fertility_by_language.csv", index=False)
+    return fl
 
-    corpus = pd.read_csv("/mnt/user-data/uploads/Quran/fertility_production_v2_all11.csv")
+def main():
+    from scipy.stats import spearmanr
+    if "--summary-only" in sys.argv:
+        fl = pd.read_csv(RESULTS / "flores_fertility_by_language.csv")
+        toks = set(fl.tokenizer)
+    else:
+        fl = tokenize_flores(); toks = set(fl.tokenizer)
+    corpus = pd.read_csv(FERTILITY)
     corpus = corpus[corpus.language.isin(LANG2FLORES)].copy()
     corpus["flores_code"] = corpus.language.map(LANG2FLORES)
     # drop duplicate bosnian (two translations -> same FLORES code): average them
@@ -116,12 +127,12 @@ def main():
                         "corpus_maxmin": round(qs, 2), "flores_maxmin": round(fs, 2),
                         "spearman_lang_fertility": round(rho, 3), "p": f"{p:.1e}"})
     sm = pd.DataFrame(summary).sort_values("flores_p90p10")
-    sm.to_csv("flores_vs_corpus_summary.csv", index=False)
+    sm.to_csv(outputs() / "flores_vs_corpus_summary.csv", index=False)
     print(sm.to_string(index=False))
     # rank agreement of tokenizer inequality between the two corpora
     rho_rank, p_rank = spearmanr(sm.corpus_p90p10, sm.flores_p90p10)
     print(f"\nTokenizer inequality rank agreement (p90/p10): rho={rho_rank:.3f} p={p_rank:.2e}")
-    json.dump({"rho_rank": rho_rank, "p_rank": p_rank}, open("flores_rank_agreement.json", "w"))
+    json.dump({"rho_rank": rho_rank, "p_rank": p_rank}, open(outputs() / "flores_rank_agreement.json", "w"))
 
 if __name__ == "__main__":
     main()
