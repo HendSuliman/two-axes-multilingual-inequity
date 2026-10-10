@@ -1,0 +1,13 @@
+{
+  "task": "15-way sura classification",
+  "tfidf_english_reference_macro_f1": 0.278,
+  "random_baseline_acc": 0.067,
+  "n_classes": 15,
+  "n_eval": 1000,
+  "n_train": 1418,
+  "random_baseline": 0.067,
+  "probe2_mean_macro_f1": 0.17,
+  "length_baseline_mean": 0.082,
+  "median_rho_probe2_probe1": 0.714,
+  "median_rho_probe2_retrieval": 0.627
+}
