@@ -1,0 +1,73 @@
+{
+ "transformers_now": "5.16.1",
+ "verdict": {
+  "mt5": {
+   "verdict": "PUBLISHED IS WRONG (sentencepiece matches current transformers; the paper's rows need correcting)",
+   "spm_vs_published": 0.19224,
+   "hf_vs_published": 0.19225,
+   "spm_vs_hf": 0.00024
+  },
+  "xlmr": {
+   "verdict": "PUBLISHED IS WRONG (sentencepiece matches current transformers; the paper's rows need correcting)",
+   "spm_vs_published": 0.19631,
+   "hf_vs_published": 0.19631,
+   "spm_vs_hf": 0.0
+  }
+ },
+ "table1_rows": [
+  {
+   "tokenizer": "mt5",
+   "source": "published",
+   "mean": 56.6,
+   "mean_ci": "[52.0,62.0]",
+   "max_min": 3.5,
+   "p90p10": 1.707,
+   "p90p10_ci": "[1.39,2.43]"
+  },
+  {
+   "tokenizer": "mt5",
+   "source": "spm",
+   "mean": 55.9,
+   "mean_ci": "[51.5,60.8]",
+   "max_min": 3.6,
+   "p90p10": 1.707,
+   "p90p10_ci": "[1.40,2.20]"
+  },
+  {
+   "tokenizer": "mt5",
+   "source": "hf_now",
+   "mean": 55.9,
+   "mean_ci": "[51.5,60.7]",
+   "max_min": 3.6,
+   "p90p10": 1.707,
+   "p90p10_ci": "[1.40,2.20]"
+  },
+  {
+   "tokenizer": "xlmr",
+   "source": "published",
+   "mean": 49.6,
+   "mean_ci": "[45.5,54.4]",
+   "max_min": 3.5,
+   "p90p10": 1.929,
+   "p90p10_ci": "[1.55,2.23]"
+  },
+  {
+   "tokenizer": "xlmr",
+   "source": "spm",
+   "mean": 48.8,
+   "mean_ci": "[45.0,52.8]",
+   "max_min": 2.8,
+   "p90p10": 1.923,
+   "p90p10_ci": "[1.55,2.23]"
+  },
+  {
+   "tokenizer": "xlmr",
+   "source": "hf_now",
+   "mean": 48.8,
+   "mean_ci": "[45.1,52.9]",
+   "max_min": 2.8,
+   "p90p10": 1.923,
+   "p90p10_ci": "[1.55,2.21]"
+  }
+ ]
+}
