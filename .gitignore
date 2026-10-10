@@ -1,0 +1,6 @@
+corpus/
+outputs/
+flores200_dataset/
+flores200_dataset.tar.gz
+__pycache__/
+.DS_Store
