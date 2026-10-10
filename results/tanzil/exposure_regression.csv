@@ -1,0 +1,16 @@
+covariate,retrieval,n,n_exposed,R2_tier,dR2,coef,p,coef_lo,coef_hi
+in_tanzil,pooled,40,23,0.2781,0.0257,0.0563,0.2478,-0.031,0.157
+in_tanzil,labse,40,23,0.2414,0.0184,0.0713,0.3342,,
+in_tanzil,bgem3,40,23,0.2231,0.0114,0.0411,0.4668,,
+in_tanzil,e5,40,23,0.0283,0.0481,0.053,0.1686,,
+in_tanzil,mpnet,40,23,0.3592,0.0191,0.0597,0.2918,,
+same_translation,pooled,40,9,0.2781,0.0376,0.0735,0.1568,-0.007,0.161
+same_translation,labse,40,9,0.2414,0.0351,0.1065,0.1857,,
+same_translation,bgem3,40,9,0.2231,0.0295,0.0714,0.2322,,
+same_translation,e5,40,9,0.0283,0.0508,0.0589,0.1569,,
+same_translation,mpnet,40,9,0.3592,0.0151,0.0574,0.3532,,
+same_vs_different (Tanzil languages),pooled,23,9,0.2164,0.0501,0.0471,0.2523,-0.041,0.14
+same_vs_different (Tanzil languages),labse,23,9,0.2065,0.0585,0.077,0.2114,,
+same_vs_different (Tanzil languages),bgem3,23,9,0.2097,0.0607,0.0552,0.2123,,
+same_vs_different (Tanzil languages),e5,23,9,0.0414,0.0296,0.0301,0.4229,,
+same_vs_different (Tanzil languages),mpnet,23,9,0.2729,0.0058,0.0262,0.6927,,

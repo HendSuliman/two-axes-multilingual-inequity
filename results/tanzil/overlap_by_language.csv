@@ -1,0 +1,25 @@
+language,corpus_translation,tanzil_document,tanzil_units,containment,reverse_containment,verdict
+urdu,urdu_junagarhi_v1.1.3,junagarhi.xml,6236,0.998,0.998,same translation
+malayalam,malayalam_kunhi_v1.0.3,abdulhameed.xml,6236,0.961,0.966,same translation
+hausa,hausa_gummi_v1.2.2,gumi.xml,10257,0.918,0.997,same translation
+german,german_bubenheim_v1.1.4,bubenheim.xml,11192,0.902,0.999,same translation
+uyghur,uyghur_saleh_v1.0.2,saleh.xml,6236,0.886,0.878,same translation
+indonesian,indonesian_complex_v1.0.1,indonesian.xml,9597,0.883,0.926,same translation
+bosnian-rwwad,bosnian_rwwad_v2.0.4,korkut.xml,8156,0.609,0.653,same translation
+azeri,azeri_musayev_v1.0.4,musayev.xml,12721,0.586,0.701,same translation
+chinese,chinese_suliman_v1.0.8,jian.xml,6237,0.567,0.574,same translation
+bosnian-mihanovich,bosnian_mihanovich_v1.1.0,korkut.xml,8156,0.511,0.547,same translation
+uzbek,uzbek_rwwad_v1.0.4,sodik.xml,19540,0.285,0.175,related (between thresholds)
+albanian,albanian_nahi_v1.1.0,nahi.xml,9815,0.281,0.29,related (between thresholds)
+turkish,turkish_rwwad_v1.0.4,vakfi.xml,12491,0.28,0.302,related (between thresholds)
+english,english_rwwad_v1.0.19,sahih.xml,10169,0.263,0.28,related (between thresholds)
+tamil,tamil_omar_brief_v1.0.2,tamil.xml,6236,0.22,0.201,related (between thresholds)
+dutch,dutch_center_v2.0.10,siregar.xml,10647,0.159,0.195,different translation
+french,french_rashid_v1.0.2,hamidullah.xml,11148,0.137,0.156,different translation
+persian,persian_ih_v1.1.3,makarem.xml,6236,0.119,0.125,different translation
+tajik,tajik_arifi_v1.0.2,ayati.xml,10216,0.097,0.134,different translation
+spanish,spanish_montada_eu_v1.0.1,cortes.xml,12261,0.088,0.143,different translation
+portuguese,portuguese_nasr_v1.4.1,elhayek.xml,9377,0.087,0.084,different translation
+romanian,romanian_project_v1.0.4,grigore.xml,11940,0.077,0.105,different translation
+kurdish,kurdish_bamoki_v1.1.1,asan.xml,6235,0.009,0.007,different translation
+japanese,japanese_saeedsato_v1.0.12,japanese.xml,6236,0.006,0.007,different translation

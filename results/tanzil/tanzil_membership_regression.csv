@@ -1,0 +1,8 @@
+set,retrieval,n,members,R2_tier,dR2_tanzil,coef_tanzil,p_perm,dR2_rank,p_rank
+all 40,pooled,40,23,0.278,0.026,0.056,0.2478,0.028,0.2376
+all 40,labse,40,23,0.241,0.018,0.071,0.3345,0.035,0.185
+all 40,bgem3,40,23,0.223,0.011,0.041,0.4676,0.035,0.2102
+all 40,e5,40,23,0.028,0.048,0.053,0.1676,0.047,0.1788
+all 40,mpnet,40,23,0.359,0.019,0.06,0.2887,0.001,0.7712
+without the six African languages,pooled,34,22,0.175,0.011,-0.019,0.5442,0.007,0.61
+Kurdish counted as absent,pooled,40,22,0.278,0.053,0.084,0.0932,0.044,0.1404

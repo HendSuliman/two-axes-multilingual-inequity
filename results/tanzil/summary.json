@@ -1,0 +1,209 @@
+{
+ "n_corpus_files_in_tanzil_languages": 24,
+ "verdicts": {
+  "same translation": 10,
+  "different translation": 9,
+  "related (between thresholds)": 5
+ },
+ "same_translation": [
+  "urdu",
+  "malayalam",
+  "hausa",
+  "german",
+  "uyghur",
+  "indonesian",
+  "bosnian-rwwad",
+  "azeri",
+  "chinese",
+  "bosnian-mihanovich"
+ ],
+ "related": [
+  "uzbek",
+  "albanian",
+  "turkish",
+  "english",
+  "tamil"
+ ],
+ "regression": [
+  {
+   "covariate": "in_tanzil",
+   "retrieval": "pooled",
+   "n": 40,
+   "n_exposed": 23,
+   "R2_tier": 0.2781,
+   "dR2": 0.0257,
+   "coef": 0.0563,
+   "p": 0.2478,
+   "coef_lo": -0.031,
+   "coef_hi": 0.157
+  },
+  {
+   "covariate": "in_tanzil",
+   "retrieval": "labse",
+   "n": 40,
+   "n_exposed": 23,
+   "R2_tier": 0.2414,
+   "dR2": 0.0184,
+   "coef": 0.0713,
+   "p": 0.3342,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "in_tanzil",
+   "retrieval": "bgem3",
+   "n": 40,
+   "n_exposed": 23,
+   "R2_tier": 0.2231,
+   "dR2": 0.0114,
+   "coef": 0.0411,
+   "p": 0.4668,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "in_tanzil",
+   "retrieval": "e5",
+   "n": 40,
+   "n_exposed": 23,
+   "R2_tier": 0.0283,
+   "dR2": 0.0481,
+   "coef": 0.053,
+   "p": 0.1686,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "in_tanzil",
+   "retrieval": "mpnet",
+   "n": 40,
+   "n_exposed": 23,
+   "R2_tier": 0.3592,
+   "dR2": 0.0191,
+   "coef": 0.0597,
+   "p": 0.2918,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "same_translation",
+   "retrieval": "pooled",
+   "n": 40,
+   "n_exposed": 9,
+   "R2_tier": 0.2781,
+   "dR2": 0.0376,
+   "coef": 0.0735,
+   "p": 0.1568,
+   "coef_lo": -0.007,
+   "coef_hi": 0.161
+  },
+  {
+   "covariate": "same_translation",
+   "retrieval": "labse",
+   "n": 40,
+   "n_exposed": 9,
+   "R2_tier": 0.2414,
+   "dR2": 0.0351,
+   "coef": 0.1065,
+   "p": 0.1857,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "same_translation",
+   "retrieval": "bgem3",
+   "n": 40,
+   "n_exposed": 9,
+   "R2_tier": 0.2231,
+   "dR2": 0.0295,
+   "coef": 0.0714,
+   "p": 0.2322,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "same_translation",
+   "retrieval": "e5",
+   "n": 40,
+   "n_exposed": 9,
+   "R2_tier": 0.0283,
+   "dR2": 0.0508,
+   "coef": 0.0589,
+   "p": 0.1569,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "same_translation",
+   "retrieval": "mpnet",
+   "n": 40,
+   "n_exposed": 9,
+   "R2_tier": 0.3592,
+   "dR2": 0.0151,
+   "coef": 0.0574,
+   "p": 0.3532,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "same_vs_different (Tanzil languages)",
+   "retrieval": "pooled",
+   "n": 23,
+   "n_exposed": 9,
+   "R2_tier": 0.2164,
+   "dR2": 0.0501,
+   "coef": 0.0471,
+   "p": 0.2523,
+   "coef_lo": -0.041,
+   "coef_hi": 0.14
+  },
+  {
+   "covariate": "same_vs_different (Tanzil languages)",
+   "retrieval": "labse",
+   "n": 23,
+   "n_exposed": 9,
+   "R2_tier": 0.2065,
+   "dR2": 0.0585,
+   "coef": 0.077,
+   "p": 0.2114,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "same_vs_different (Tanzil languages)",
+   "retrieval": "bgem3",
+   "n": 23,
+   "n_exposed": 9,
+   "R2_tier": 0.2097,
+   "dR2": 0.0607,
+   "coef": 0.0552,
+   "p": 0.2123,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "same_vs_different (Tanzil languages)",
+   "retrieval": "e5",
+   "n": 23,
+   "n_exposed": 9,
+   "R2_tier": 0.0414,
+   "dR2": 0.0296,
+   "coef": 0.0301,
+   "p": 0.4229,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  },
+  {
+   "covariate": "same_vs_different (Tanzil languages)",
+   "retrieval": "mpnet",
+   "n": 23,
+   "n_exposed": 9,
+   "R2_tier": 0.2729,
+   "dR2": 0.0058,
+   "coef": 0.0262,
+   "p": 0.6927,
+   "coef_lo": NaN,
+   "coef_hi": NaN
+  }
+ ]
+}
