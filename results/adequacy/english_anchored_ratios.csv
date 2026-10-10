@@ -1,0 +1,13 @@
+tokenizer,pair,ratio_raw,ratio_stripped
+GPT-4o (o200k),khmer/english,3.75,3.53
+GPT-4o (o200k),malayalam/english,2.14,2.13
+GPT-4o (o200k),tamil/english,2.14,1.83
+GPT-4o (o200k),japanese/english,2.33,1.91
+GPT-4 (cl100k),khmer/english,9.69,9.29
+GPT-4 (cl100k),malayalam/english,9.74,9.98
+GPT-4 (cl100k),tamil/english,8.1,7.23
+GPT-4 (cl100k),japanese/english,2.97,2.51
+Llama-3,khmer/english,9.69,9.29
+Llama-3,malayalam/english,9.56,9.79
+Llama-3,tamil/english,8.1,7.23
+Llama-3,japanese/english,2.09,1.68

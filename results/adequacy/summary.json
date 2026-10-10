@@ -1,0 +1,386 @@
+{
+ "insertions": {
+  "median_byte_share": 0.0422,
+  "max_byte_share": 0.228,
+  "max_language": "lithuanian",
+  "n_languages_over_10pct": 12
+ },
+ "robustness": {
+  "NLLB": {
+   "p90p10_raw": 1.542,
+   "p90p10_stripped": 1.423,
+   "p90p10_change_pct": -7.7,
+   "rho_tpv_raw_vs_stripped": 0.704,
+   "rho_tpb_raw_vs_stripped": 0.9925
+  },
+  "mT5 / Aya-101": {
+   "p90p10_raw": 1.707,
+   "p90p10_stripped": 1.833,
+   "p90p10_change_pct": 7.4,
+   "rho_tpv_raw_vs_stripped": 0.7618,
+   "rho_tpb_raw_vs_stripped": 0.9976
+  },
+  "GPT-4o (o200k)": {
+   "p90p10_raw": 1.849,
+   "p90p10_stripped": 1.798,
+   "p90p10_change_pct": -2.8,
+   "rho_tpv_raw_vs_stripped": 0.9256,
+   "rho_tpb_raw_vs_stripped": 0.9962
+  },
+  "mBERT": {
+   "p90p10_raw": 1.898,
+   "p90p10_stripped": 1.718,
+   "p90p10_change_pct": -9.5,
+   "rho_tpv_raw_vs_stripped": 0.9162,
+   "rho_tpb_raw_vs_stripped": 0.9949
+  },
+  "XLM-R": {
+   "p90p10_raw": 1.923,
+   "p90p10_stripped": 1.774,
+   "p90p10_change_pct": -7.7,
+   "rho_tpv_raw_vs_stripped": 0.8669,
+   "rho_tpb_raw_vs_stripped": 0.9936
+  },
+  "Gemma-2": {
+   "p90p10_raw": 2.474,
+   "p90p10_stripped": 2.54,
+   "p90p10_change_pct": 2.7,
+   "rho_tpv_raw_vs_stripped": 0.9362,
+   "rho_tpb_raw_vs_stripped": 0.9955
+  },
+  "BLOOM": {
+   "p90p10_raw": 2.548,
+   "p90p10_stripped": 2.273,
+   "p90p10_change_pct": -10.8,
+   "rho_tpv_raw_vs_stripped": 0.9634,
+   "rho_tpb_raw_vs_stripped": 0.9974
+  },
+  "ByT5 (bytes)": {
+   "p90p10_raw": 2.949,
+   "p90p10_stripped": 2.962,
+   "p90p10_change_pct": 0.4,
+   "rho_tpv_raw_vs_stripped": 0.9547,
+   "rho_tpb_raw_vs_stripped": NaN
+  },
+  "GPT-4 (cl100k)": {
+   "p90p10_raw": 4.811,
+   "p90p10_stripped": 4.623,
+   "p90p10_change_pct": -3.9,
+   "rho_tpv_raw_vs_stripped": 0.9807,
+   "rho_tpb_raw_vs_stripped": 0.9962
+  },
+  "Llama-3": {
+   "p90p10_raw": 5.127,
+   "p90p10_stripped": 5.187,
+   "p90p10_change_pct": 1.2,
+   "rho_tpv_raw_vs_stripped": 0.9547,
+   "rho_tpb_raw_vs_stripped": 0.9986
+  }
+ },
+ "insertion_vs_cost": {
+  "NLLB": {
+   "rho_ins_vs_tpv": 0.684,
+   "p_tpv": 0.0,
+   "rho_ins_vs_tpb": -0.226,
+   "p_tpb": 0.1612
+  },
+  "mT5 / Aya-101": {
+   "rho_ins_vs_tpv": 0.57,
+   "p_tpv": 0.0001,
+   "rho_ins_vs_tpb": -0.166,
+   "p_tpb": 0.3056
+  },
+  "GPT-4o (o200k)": {
+   "rho_ins_vs_tpv": 0.63,
+   "p_tpv": 0.0,
+   "rho_ins_vs_tpb": -0.049,
+   "p_tpb": 0.7623
+  },
+  "mBERT": {
+   "rho_ins_vs_tpv": 0.442,
+   "p_tpv": 0.0043,
+   "rho_ins_vs_tpb": -0.203,
+   "p_tpb": 0.2085
+  },
+  "XLM-R": {
+   "rho_ins_vs_tpv": 0.582,
+   "p_tpv": 0.0001,
+   "rho_ins_vs_tpb": -0.148,
+   "p_tpb": 0.3627
+  },
+  "Gemma-2": {
+   "rho_ins_vs_tpv": 0.49,
+   "p_tpv": 0.0013,
+   "rho_ins_vs_tpb": 0.002,
+   "p_tpb": 0.9917
+  },
+  "BLOOM": {
+   "rho_ins_vs_tpv": 0.506,
+   "p_tpv": 0.0009,
+   "rho_ins_vs_tpb": 0.133,
+   "p_tpb": 0.4136
+  },
+  "ByT5 (bytes)": {
+   "rho_ins_vs_tpv": 0.56,
+   "p_tpv": 0.0002,
+   "rho_ins_vs_tpb": NaN,
+   "p_tpb": NaN
+  },
+  "GPT-4 (cl100k)": {
+   "rho_ins_vs_tpv": 0.492,
+   "p_tpv": 0.0013,
+   "rho_ins_vs_tpb": 0.221,
+   "p_tpb": 0.1712
+  },
+  "Llama-3": {
+   "rho_ins_vs_tpv": 0.469,
+   "p_tpv": 0.0023,
+   "rho_ins_vs_tpb": 0.114,
+   "p_tpb": 0.4853
+  }
+ },
+ "script_fit": {
+  "n_sig_raw": 9,
+  "n_sig_stripped": 9,
+  "n_vocabularies": 9,
+  "dR2_stripped_range": [
+   0.309,
+   0.807
+  ]
+ },
+ "english_anchored": [
+  {
+   "tokenizer": "GPT-4o (o200k)",
+   "pair": "khmer/english",
+   "ratio_raw": 3.75,
+   "ratio_stripped": 3.53
+  },
+  {
+   "tokenizer": "GPT-4o (o200k)",
+   "pair": "malayalam/english",
+   "ratio_raw": 2.14,
+   "ratio_stripped": 2.13
+  },
+  {
+   "tokenizer": "GPT-4o (o200k)",
+   "pair": "tamil/english",
+   "ratio_raw": 2.14,
+   "ratio_stripped": 1.83
+  },
+  {
+   "tokenizer": "GPT-4o (o200k)",
+   "pair": "japanese/english",
+   "ratio_raw": 2.33,
+   "ratio_stripped": 1.91
+  },
+  {
+   "tokenizer": "GPT-4 (cl100k)",
+   "pair": "khmer/english",
+   "ratio_raw": 9.69,
+   "ratio_stripped": 9.29
+  },
+  {
+   "tokenizer": "GPT-4 (cl100k)",
+   "pair": "malayalam/english",
+   "ratio_raw": 9.74,
+   "ratio_stripped": 9.98
+  },
+  {
+   "tokenizer": "GPT-4 (cl100k)",
+   "pair": "tamil/english",
+   "ratio_raw": 8.1,
+   "ratio_stripped": 7.23
+  },
+  {
+   "tokenizer": "GPT-4 (cl100k)",
+   "pair": "japanese/english",
+   "ratio_raw": 2.97,
+   "ratio_stripped": 2.51
+  },
+  {
+   "tokenizer": "Llama-3",
+   "pair": "khmer/english",
+   "ratio_raw": 9.69,
+   "ratio_stripped": 9.29
+  },
+  {
+   "tokenizer": "Llama-3",
+   "pair": "malayalam/english",
+   "ratio_raw": 9.56,
+   "ratio_stripped": 9.79
+  },
+  {
+   "tokenizer": "Llama-3",
+   "pair": "tamil/english",
+   "ratio_raw": 8.1,
+   "ratio_stripped": 7.23
+  },
+  {
+   "tokenizer": "Llama-3",
+   "pair": "japanese/english",
+   "ratio_raw": 2.09,
+   "ratio_stripped": 1.68
+  }
+ ],
+ "adequacy": {
+  "n_supported": 35,
+  "sample_n": 2000,
+  "kept": 1000,
+  "diag_median_diff": -0.0048,
+  "diag_lower": "20/29",
+  "language_level": {
+   "Joshi tier": {
+    "rho": 0.0294,
+    "p": 0.8669
+   },
+   "NLLB tokens/verse": {
+    "rho": 0.1496,
+    "p": 0.3911
+   },
+   "NLLB tokens/byte": {
+    "rho": -0.4389,
+    "p": 0.0083
+   },
+   "mT5 / Aya-101 tokens/verse": {
+    "rho": 0.0563,
+    "p": 0.748
+   },
+   "mT5 / Aya-101 tokens/byte": {
+    "rho": -0.384,
+    "p": 0.0228
+   },
+   "GPT-4o (o200k) tokens/verse": {
+    "rho": 0.1448,
+    "p": 0.4065
+   },
+   "GPT-4o (o200k) tokens/byte": {
+    "rho": -0.4857,
+    "p": 0.0031
+   },
+   "mBERT tokens/verse": {
+    "rho": 0.2681,
+    "p": 0.1195
+   },
+   "mBERT tokens/byte": {
+    "rho": -0.358,
+    "p": 0.0347
+   },
+   "XLM-R tokens/verse": {
+    "rho": -0.0053,
+    "p": 0.9758
+   },
+   "XLM-R tokens/byte": {
+    "rho": -0.5457,
+    "p": 0.0007
+   },
+   "Gemma-2 tokens/verse": {
+    "rho": 0.1877,
+    "p": 0.2803
+   },
+   "Gemma-2 tokens/byte": {
+    "rho": -0.3193,
+    "p": 0.0615
+   },
+   "BLOOM tokens/verse": {
+    "rho": -0.0333,
+    "p": 0.8492
+   },
+   "BLOOM tokens/byte": {
+    "rho": -0.2661,
+    "p": 0.1223
+   },
+   "ByT5 (bytes) tokens/verse": {
+    "rho": 0.3297,
+    "p": 0.0531
+   },
+   "GPT-4 (cl100k) tokens/verse": {
+    "rho": 0.2759,
+    "p": 0.1086
+   },
+   "GPT-4 (cl100k) tokens/byte": {
+    "rho": 0.0835,
+    "p": 0.6336
+   },
+   "Llama-3 tokens/verse": {
+    "rho": 0.163,
+    "p": 0.3494
+   },
+   "Llama-3 tokens/byte": {
+    "rho": -0.0896,
+    "p": 0.6086
+   }
+  },
+  "subset": {
+   "NLLB": {
+    "p90p10_sample": 1.538,
+    "p90p10_adequate": 1.513,
+    "change_pct": -1.7,
+    "rho_tpv": 0.99,
+    "rho_tpb": 0.9986
+   },
+   "mT5 / Aya-101": {
+    "p90p10_sample": 1.702,
+    "p90p10_adequate": 1.691,
+    "change_pct": -0.7,
+    "rho_tpv": 0.9958,
+    "rho_tpb": 0.9997
+   },
+   "GPT-4o (o200k)": {
+    "p90p10_sample": 1.853,
+    "p90p10_adequate": 1.844,
+    "change_pct": -0.5,
+    "rho_tpv": 0.9984,
+    "rho_tpb": 0.9995
+   },
+   "mBERT": {
+    "p90p10_sample": 1.895,
+    "p90p10_adequate": 1.889,
+    "change_pct": -0.3,
+    "rho_tpv": 0.9981,
+    "rho_tpb": 0.9997
+   },
+   "XLM-R": {
+    "p90p10_sample": 1.926,
+    "p90p10_adequate": 1.904,
+    "change_pct": -1.2,
+    "rho_tpv": 0.9969,
+    "rho_tpb": 0.9995
+   },
+   "Gemma-2": {
+    "p90p10_sample": 2.472,
+    "p90p10_adequate": 2.467,
+    "change_pct": -0.2,
+    "rho_tpv": 0.9977,
+    "rho_tpb": 0.999
+   },
+   "BLOOM": {
+    "p90p10_sample": 2.534,
+    "p90p10_adequate": 2.527,
+    "change_pct": -0.3,
+    "rho_tpv": 0.999,
+    "rho_tpb": 0.9995
+   },
+   "ByT5 (bytes)": {
+    "p90p10_sample": 2.961,
+    "p90p10_adequate": 2.957,
+    "change_pct": -0.1,
+    "rho_tpv": 0.999,
+    "rho_tpb": NaN
+   },
+   "GPT-4 (cl100k)": {
+    "p90p10_sample": 4.812,
+    "p90p10_adequate": 4.834,
+    "change_pct": 0.4,
+    "rho_tpv": 0.9995,
+    "rho_tpb": 0.9986
+   },
+   "Llama-3": {
+    "p90p10_sample": 5.135,
+    "p90p10_adequate": 5.228,
+    "change_pct": 1.8,
+    "rho_tpv": 0.9986,
+    "rho_tpb": 0.9998
+   }
+  }
+ }
+}

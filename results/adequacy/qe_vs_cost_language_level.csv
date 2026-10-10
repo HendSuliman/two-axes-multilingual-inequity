@@ -1,0 +1,21 @@
+covariate,rho,p
+Joshi tier,0.0294,0.8669
+NLLB tokens/verse,0.1496,0.3911
+NLLB tokens/byte,-0.4389,0.0083
+mT5 / Aya-101 tokens/verse,0.0563,0.748
+mT5 / Aya-101 tokens/byte,-0.384,0.0228
+GPT-4o (o200k) tokens/verse,0.1448,0.4065
+GPT-4o (o200k) tokens/byte,-0.4857,0.0031
+mBERT tokens/verse,0.2681,0.1195
+mBERT tokens/byte,-0.358,0.0347
+XLM-R tokens/verse,-0.0053,0.9758
+XLM-R tokens/byte,-0.5457,0.0007
+Gemma-2 tokens/verse,0.1877,0.2803
+Gemma-2 tokens/byte,-0.3193,0.0615
+BLOOM tokens/verse,-0.0333,0.8492
+BLOOM tokens/byte,-0.2661,0.1223
+ByT5 (bytes) tokens/verse,0.3297,0.0531
+GPT-4 (cl100k) tokens/verse,0.2759,0.1086
+GPT-4 (cl100k) tokens/byte,0.0835,0.6336
+Llama-3 tokens/verse,0.163,0.3494
+Llama-3 tokens/byte,-0.0896,0.6086

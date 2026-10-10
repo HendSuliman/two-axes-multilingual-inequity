@@ -1,0 +1,11 @@
+tokenizer,p90p10_raw,p90p10_clean,p90p10_stripped,p90p10_change_pct,rho_tpv_raw_vs_stripped,rho_tpb_raw_vs_stripped,largest_rank_move,moved_most
+NLLB,1.542,1.528,1.423,-7.7,0.704,0.9925,24,uyghur
+mT5 / Aya-101,1.707,1.707,1.833,7.4,0.7618,0.9976,22,persian
+GPT-4o (o200k),1.849,1.858,1.798,-2.8,0.9256,0.9962,14,persian
+mBERT,1.898,1.903,1.718,-9.5,0.9162,0.9949,16,persian
+XLM-R,1.923,1.923,1.774,-7.7,0.8669,0.9936,19,persian
+Gemma-2,2.474,2.557,2.54,2.7,0.9362,0.9955,12,japanese
+BLOOM,2.548,2.588,2.273,-10.8,0.9634,0.9974,10,persian
+ByT5 (bytes),2.949,2.975,2.962,0.4,0.9547,,12,lithuanian
+GPT-4 (cl100k),4.811,4.814,4.623,-3.9,0.9807,0.9962,9,spanish
+Llama-3,5.127,5.127,5.187,1.2,0.9547,0.9986,11,persian
