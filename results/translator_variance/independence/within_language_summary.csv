@@ -1,0 +1,5 @@
+pairs,measure,languages,n_pairs,median_pair_ratio
+all pairs,gpt4o_o200k_tpv,14,24,1.06
+all pairs,bytes_per_verse,14,24,1.06
+independent pairs only,gpt4o_o200k_tpv,13,21,1.063
+independent pairs only,bytes_per_verse,13,21,1.062

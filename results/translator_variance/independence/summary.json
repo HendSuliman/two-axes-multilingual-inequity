@@ -1,0 +1,49 @@
+{
+ "near_copies": [
+  {
+   "a": "bosnian_mihanovich",
+   "b": "bosnian_rwwad",
+   "identical_verses": 0.576
+  },
+  {
+   "a": "indonesian_affairs",
+   "b": "indonesian_sabiq",
+   "identical_verses": 0.692
+  },
+  {
+   "a": "spanish_montada_eu",
+   "b": "spanish_montada_latin",
+   "identical_verses": 0.669
+  }
+ ],
+ "summary": [
+  {
+   "pairs": "all pairs",
+   "measure": "gpt4o_o200k_tpv",
+   "languages": 14,
+   "n_pairs": 24,
+   "median_pair_ratio": 1.06
+  },
+  {
+   "pairs": "all pairs",
+   "measure": "bytes_per_verse",
+   "languages": 14,
+   "n_pairs": 24,
+   "median_pair_ratio": 1.06
+  },
+  {
+   "pairs": "independent pairs only",
+   "measure": "gpt4o_o200k_tpv",
+   "languages": 13,
+   "n_pairs": 21,
+   "median_pair_ratio": 1.063
+  },
+  {
+   "pairs": "independent pairs only",
+   "measure": "bytes_per_verse",
+   "languages": 13,
+   "n_pairs": 21,
+   "median_pair_ratio": 1.062
+  }
+ ]
+}
