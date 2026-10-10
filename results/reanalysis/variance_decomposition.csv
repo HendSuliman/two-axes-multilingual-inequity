@@ -1,0 +1,5 @@
+outcome,R2_script_only,R2_tier_only,R2_both,script_unique,tier_unique
+"fertility (GPT-4o, log)",0.231,0.303,0.409,0.106,0.179
+"fertility (mean of 11, log)",0.677,0.314,0.734,0.421,0.057
+"tokenizer fit (GPT-4o tok/byte, log)",0.656,0.0,0.808,0.808,0.152
+retrieval (pooled),0.044,0.278,0.504,0.226,0.46

@@ -1,0 +1,47 @@
+{
+  "A_omnibus": {
+    "paper_6group": {
+      "H": 9.72,
+      "p": 0.0837,
+      "k": 6
+    },
+    "regrouped_5group": {
+      "H": 9.03,
+      "p": 0.0603,
+      "k": 5
+    }
+  },
+  "B_script_effect": {
+    "n_sig_holm_tokens_per_verse": 4,
+    "n_sig_holm_tokens_per_byte": 11,
+    "n_tokenizers": 11
+  },
+  "E_contrast": {
+    "n_sig_holm": 10,
+    "n": 11
+  },
+  "F_2x2": {
+    "long|good": 16,
+    "long|mid": 2,
+    "long|poor": 1,
+    "mid|good": 4,
+    "mid|mid": 3,
+    "mid|poor": 1,
+    "short|good": 2,
+    "short|mid": 8,
+    "short|poor": 3
+  },
+  "F_khmer_vs_chinese": {
+    "khmer": {
+      "bytes_vs_en": 3.94,
+      "fit_vs_en": 0.95
+    },
+    "chinese": {
+      "bytes_vs_en": 0.9,
+      "fit_vs_en": 1.25
+    }
+  },
+  "G_dissociation": {
+    "n_encoders_bounded_within_0.3": 0
+  }
+}
